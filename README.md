@@ -31,18 +31,8 @@ Sou responsável pela idealização, arquitetura, frontend e backend do projeto.
 
 ## 🛠️ Tecnologias utilizadas
 
-- React
-- JavaScript
-- TypeScript
-- Node.js
+- React(tsx)
 - CSS
-- Prisma
-
----
-
-## 📂 Estrutura do projeto
-
-O projeto foi desenvolvido com foco em simplicidade, clareza e organização, evitando complexidade desnecessária e priorizando legibilidade e manutenção do código.
 
 ---
 
