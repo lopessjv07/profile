@@ -1,0 +1,26 @@
+footer{
+        align-items: center;
+        text-align: center;
+        padding: 10px 60px 30px 60px;
+        background-color: rgb(0, 34, 92);
+        box-shadow: 0 5px 40px 15px rgba(0, 0, 0, 0.322);
+        height: 100px;
+        padding-bottom: 40px;
+        margin-top: 90px;
+}
+
+.nameFooter{
+    color: white;
+}
+
+.linkTo {
+    text-decoration: none;
+    color: rgb(135, 199, 255);
+    margin: 10px;
+    font-size: 16px;
+}
+
+.copyYear{
+    margin-top: 20px;
+    color: rgb(145, 145, 145);
+}

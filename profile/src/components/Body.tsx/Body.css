@@ -1,0 +1,34 @@
+body{
+    background-color: rgb(255, 255, 255);
+    color: rgb(5, 19, 63);
+}
+
+.presentation{
+    margin: 40px 50px 40px 50px;
+}
+
+.presentation h1{
+    font-size: 35px;
+}
+
+.presentation b{
+    color: rgb(0, 110, 255);
+}
+
+.about__header{
+    margin: 0px 10px 40px 70px;
+}
+
+.about__subtitle{
+    font-size: 15px;
+}
+
+.about__content{
+    margin-left: 100px;
+    width: 1000px;
+}
+
+.about__text{
+    font-size: 15px;
+    line-height: 1.6;
+}
