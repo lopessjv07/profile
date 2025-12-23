@@ -55,9 +55,8 @@ O portfólio pode ser acessado em:
 
 ## 📫 Contato
 
-- GitHub: https://github.com/lopessjv07  
-- LinkedIn: (adicione seu LinkedIn aqui)  
-- Email: joaovitor@email.com  
+- LinkedIn: https://www.linkedin.com/in/jo%C3%A3o-vitor-lopes-467714312/
+- Email: lopessdev@gmail.com
 
 ---
 
