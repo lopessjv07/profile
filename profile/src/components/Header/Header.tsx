@@ -11,7 +11,7 @@ function Header() {
     <>
       <header>
         <div className="logo">
-          <img src="/public/logo.png" alt="Logo" width="150px" />
+          <img src="../../assets/logo.png" alt="Logo" width="150px" />
         </div>
         <div className="navLinks">
           <a href="https://www.instagram.com/lopessdev/" target="_blank">
