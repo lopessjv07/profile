@@ -9,6 +9,11 @@ body {
     color: rgb(255, 255, 255);
 }
 
+a{
+    text-decoration: none;
+    color: rgb(0, 153, 255);
+}
+
 /* Container geral do conteúdo */
 .hero {
     width: 100%;

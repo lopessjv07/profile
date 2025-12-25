@@ -61,7 +61,12 @@ function Body() {
               <p className="about__text">
                 Estou desenvolvendo o Chamou, uma plataforma que conecta
                 empresas e pessoas para trabalhos rápidos. Atuo na ideia,
-                arquitetura e no desenvolvimento de frontend e backend.
+                arquitetura e no desenvolvimento de frontend e backend. Saiba
+                mais sobre o projeto{" "}
+                <a href="https://chamou-preview.vercel.app/">
+                  <strong>aqui!</strong>
+                </a>
+                .
               </p>
             </article>
 
