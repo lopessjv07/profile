@@ -50,7 +50,7 @@ function Body() {
             <article className="about__block about__block--education">
               <h3 className="about__heading">Formação e base</h3>
               <p className="about__text">
-                Tenho formação técnica em Desenvolvimento de Sistemas, com base
+                Sou formado em Técnico em Desenvolvimento de Sistemas - <b>Senai</b>, com base
                 em lógica, estrutura de dados, banco de dados e web. Isso
                 facilita aprender rápido e adaptar soluções conforme o projeto.
               </p>
