@@ -10,10 +10,10 @@
     --bg-card-hover: #222222;
     --bg-header: rgba(13, 13, 13, 0.85);
 
-    /* Green palette (Node.js) */
-    --green-primary: #68A063;
-    --green-light: #8CC84B;
-    --green-muted: rgba(104, 160, 99, 0.15);
+    /* Green palette (Node.js — vivid) */
+        --green-primary: #4ADE4A;
+        --green-light: #66FF66;
+        --green-muted: rgba(74, 222, 74, 0.12);
 
     /* Text */
     --text-primary: #f0f0f0;
@@ -29,8 +29,8 @@
     --font-main: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 
     /* Spacing */
-    --container-max: 1080px;
-    --section-gap: clamp(60px, 8vw, 100px);
+    --container-max: 1200px;
+        --section-gap: clamp(36px, 5vw, 60px);
 
     /* Transitions */
     --transition-fast: 0.2s ease;

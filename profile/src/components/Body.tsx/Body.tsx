@@ -1,3 +1,4 @@
+import { useEffect, useRef } from "react";
 import "./Body.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -25,9 +26,9 @@ const projects = [
   },
   {
     id: "chamou",
-    label: "Produto Real",
+    label: "Em Desenvolvimento",
     title: "Chamou",
-    subtitle: "Plataforma de vagas instantâneas",
+    subtitle: "Plataforma de vagas instantâneas — em construção ativa",
     problem:
       "Empresas precisam de freelancers disponíveis agora, mas plataformas tradicionais são lentas e burocráticas.",
     solution:
@@ -55,20 +56,29 @@ const projects = [
       "Capacidade de aprender e aplicar tecnologias novas",
     ],
     stack: ["Python", "TensorFlow"],
-    link: "https://github.com/lopessjv07",
+    link: "https://optic-zeta.vercel.app/",
   },
 ];
 
-const stackItems = {
-  Frontend: ["React", "TypeScript", "Next.js", "HTML/CSS"],
-  Backend: ["Node.js", "Prisma", "REST APIs"],
-  "Banco de Dados": ["PostgreSQL"],
-  Outros: ["Git", "Python", "TensorFlow"],
-};
+
 
 function Body() {
+  const glowRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleMouseMove = (e: MouseEvent) => {
+      if (glowRef.current) {
+        glowRef.current.style.setProperty('--glow-x', `${e.clientX}px`);
+        glowRef.current.style.setProperty('--glow-y', `${e.clientY + window.scrollY}px`);
+      }
+    };
+    window.addEventListener('mousemove', handleMouseMove);
+    return () => window.removeEventListener('mousemove', handleMouseMove);
+  }, []);
+
   return (
-    <main>
+    <main className="main-wrapper" ref={glowRef}>
+      <div className="mouse-glow" />
       {/* ──── Hero ──── */}
       <section className="hero" id="hero">
         <div className="container">
@@ -184,19 +194,11 @@ function Body() {
       <section className="stack" id="stack">
         <div className="container">
           <h2 className="section__title">Stack</h2>
-          <div className="stack__grid">
-            {Object.entries(stackItems).map(([category, techs]) => (
-              <div key={category} className="stack__group">
-                <h3 className="stack__category">{category}</h3>
-                <div className="stack__pills">
-                  {techs.map((tech) => (
-                    <span key={tech} className="pill pill--lg">
-                      {tech}
-                    </span>
-                  ))}
-                </div>
-              </div>
-            ))}
+          <div className="stack__icons">
+            <img
+              src="https://skillicons.dev/icons?i=ubuntu,ts,py,postgres,nodejs,react,vite,nextjs&theme=dark"
+              alt="Tech Stack: Ubuntu, TypeScript, Python, PostgreSQL, Node.js, React, Vite, Next.js"
+            />
           </div>
         </div>
       </section>
