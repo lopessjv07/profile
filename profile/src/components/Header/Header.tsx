@@ -7,7 +7,7 @@ function Header() {
     <header className="header">
       <div className="header__inner">
         <a href="#" className="header__logo">
-          JV<span className="header__logo-accent">Lopes</span>
+          <img src="/logo.png" alt="LopesDev" className="header__logo-img" />
         </a>
 
         <nav className="header__nav">
