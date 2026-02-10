@@ -21,7 +21,7 @@ const projects = [
       "Produto real com foco em resolver um problema de mercado",
     ],
     stack: ["React", "Node.js", "Prisma", "PostgreSQL"],
-    link: "https://github.com/lopessjv07",
+    link: "https://ordemo.app/",
   },
   {
     id: "chamou",
