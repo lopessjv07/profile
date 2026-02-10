@@ -1,40 +1,65 @@
-footer{
-        align-items: center;
-        text-align: center;
-        padding: 10px 60px 30px 60px;
-        background-color: rgb(0, 34, 92);
-        box-shadow: 0 5px 40px 15px rgba(0, 0, 0, 0.322);
-        height: 150px;
-        padding-bottom: 40px;
-        margin-top: 90px;
+/* ═══════════════════════════════════════
+   Footer / Contact
+   ═══════════════════════════════════════ */
+
+.footer {
+    padding: var(--section-gap) 0 40px 0;
+    border-top: 1px solid var(--border-subtle);
+    text-align: center;
 }
 
-.nameFooter{
-    color: white;
+.footer__inner {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding-inline: clamp(20px, 5vw, 40px);
+}
+
+.footer__title {
+    font-size: clamp(1.4rem, 3vw, 2rem);
+    font-weight: 700;
+    margin-bottom: 8px;
+    letter-spacing: -0.02em;
+}
+
+.footer__subtitle {
     font-size: 1rem;
+color: var(--text-secondary);
+    margin-bottom: 28px;
+    max-width: 420px;
+    margin-inline: auto;
+    line-height: 1.6;
 }
 
-.linkTo {
+.footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+}
+
+.footer__links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 10px 20px;
+    border: 1px solid var(--border-card);
+    border-radius: 8px;
+    transition: all var(--transition-base);
     text-decoration: none;
-    color: rgb(135, 199, 255);
-    margin: 10px;
-    font-size: 16px;
 }
 
-.copyYear{
-    margin-top: 20px;
-    color: rgb(145, 145, 145);
+.footer__links a:hover {
+    color: var(--green-light);
+    border-color: var(--border-hover);
+    background: var(--green-muted);
+    transform: translateY(-2px);
 }
 
-@media (max-width: 450px) {
-    footer{
-                align-items: center;
-                    text-align: center;
-                    padding: 10px 60px 30px 60px;
-                    background-color: rgb(0, 34, 92);
-                    box-shadow: 0 5px 40px 15px rgba(0, 0, 0, 0.322);
-                    height: 180px;
-                    padding-bottom: 40px;
-                    margin-top: 50px;
-    }
+.footer__copy {
+    font-size: 0.8rem;
+    color: var(--text-muted);
 }
