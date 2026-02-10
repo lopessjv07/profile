@@ -54,7 +54,8 @@ html {
 
 body {
     font-family: var(--font-main);
-    background-color: var(--bg-primary);
+    background: linear-gradient(160deg, #0d0d0d 0%, #0a1a0f 50%, #0d0d0d 100%);
+        background-attachment: fixed;
     color: var(--text-primary);
     line-height: 1.6;
     min-height: 100vh;
@@ -78,4 +79,10 @@ a:hover {
 img {
     max-width: 100%;
     display: block;
+}
+/* Desktop: flat background */
+@media (min-width: 1024px) {
+    body {
+        background: var(--bg-primary);
+    }
 }
