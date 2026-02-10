@@ -193,7 +193,6 @@ function Body() {
       {/* ──── Stack ──── */}
       <section className="stack" id="stack">
         <div className="container">
-          <h2 className="section__title">Stack</h2>
           <div className="stack__icons">
             <img
               src="https://skillicons.dev/icons?i=ubuntu,ts,py,postgres,nodejs,react,vite,nextjs&theme=dark"
