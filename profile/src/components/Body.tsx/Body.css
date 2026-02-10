@@ -1,5 +1,5 @@
 /* ═══════════════════════════════════════
-   Body — All Sections
+   Body — All Sections (Mobile-First)
    ═══════════════════════════════════════ */
 
 /* Mouse-following glow */
@@ -35,50 +35,54 @@
     position: relative;
     z-index: 1;
 }
+
 /* Container */
 .container {
     width: 100%;
     max-width: var(--container-max);
     margin: 0 auto;
-    padding-inline: clamp(20px, 5vw, 40px);
+    padding-inline: 16px;
 }
 
 /* Section titles */
 .section__title {
-    font-size: clamp(1.6rem, 3vw, 2.2rem);
+    font-size: 1.5rem;
     font-weight: 700;
-    margin-bottom: 8px;
+    margin-bottom: 6px;
     letter-spacing: -0.02em;
     color: var(--text-primary);
 }
 
 .section__subtitle {
-    font-size: 0.95rem;
+    font-size: 0.9rem;
     color: var(--text-secondary);
-    margin-bottom: clamp(16px, 3vw, 28px);
+    margin-bottom: 20px;
 }
-/* ─── Hero ─── */
+/* ═══════════════════════════════════════
+   Hero — Mobile base
+   ═══════════════════════════════════════ */
 .hero {
-min-height: 80vh;
+    min-height: 85vh;
     display: flex;
     align-items: center;
     padding-top: 70px;
+    padding-bottom: 20px;
 }
 
 .hero__greeting {
-    font-size: 1.1rem;
+    font-size: 0.95rem;
     color: var(--green-light);
     font-weight: 500;
-    margin-bottom: 12px;
+    margin-bottom: 8px;
     letter-spacing: 0.02em;
 }
 
 .hero__name {
-    font-size: clamp(2.8rem, 7vw, 4.5rem);
+    font-size: 2.2rem;
     font-weight: 800;
-    line-height: 1.05;
+    line-height: 1.08;
     letter-spacing: -0.03em;
-    margin-bottom: 20px;
+    margin-bottom: 14px;
 }
 
 .hero__accent {
@@ -86,27 +90,27 @@ min-height: 80vh;
 }
 
 .hero__tagline {
-    font-size: clamp(0.95rem, 2vw, 1.15rem);
+    font-size: 0.95rem;
     color: var(--text-secondary);
     max-width: 540px;
     line-height: 1.6;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .hero__actions {
     display: flex;
-gap: 16px;
+    gap: 12px;
     flex-wrap: wrap;
 }
 
 /* Buttons */
 .btn {
     display: inline-flex;
-align-items: center;
-gap: 8px;
-    padding: 12px 28px;
+    align-items: center;
+        gap: 8px;
+    padding: 11px 22px;
     border-radius: 8px;
-    font-size: 0.95rem;
+    font-size: 0.88rem;
     font-weight: 600;
     font-family: var(--font-main);
     cursor: pointer;
@@ -139,7 +143,9 @@ gap: 8px;
     transform: translateY(-2px);
 }
 
-/* ─── About ─── */
+/* ═══════════════════════════════════════
+   About — Mobile base
+   ═══════════════════════════════════════ */
 .about {
     padding-block: var(--section-gap);
 }
@@ -147,14 +153,14 @@ gap: 8px;
 .about__content {
     max-width: 680px;
     display: flex;
-flex-direction: column;
-    gap: 16px;
+    flex-direction: column;
+    gap: 14px;
 }
 
 .about__content p {
-    font-size: clamp(0.95rem, 2vw, 1.05rem);
+    font-size: 0.92rem;
     color: var(--text-secondary);
-    line-height: 1.75;
+    line-height: 1.7;
 }
 
 .about__content strong {
@@ -162,7 +168,9 @@ flex-direction: column;
     font-weight: 600;
 }
 
-/* ─── Projects ─── */
+/* ═══════════════════════════════════════
+   Projects — Mobile base (1 column)
+   ═══════════════════════════════════════ */
 .projects {
     padding-block: var(--section-gap);
 }
@@ -170,7 +178,7 @@ flex-direction: column;
 .projects__grid {
     display: grid;
     gap: 16px;
-        grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
 }
 
 /* Project Card */
@@ -178,7 +186,7 @@ flex-direction: column;
     background: var(--bg-card);
     border: 1px solid var(--border-card);
     border-radius: 12px;
-        padding: 20px;
+    padding: 18px;
     display: flex;
     flex-direction: column;
     transition: all var(--transition-base);
@@ -192,31 +200,31 @@ flex-direction: column;
 }
 
 .project-card__header {
-    margin-bottom: 14px;
+    margin-bottom: 12px;
 }
 
 .project-card__label {
     display: inline-block;
-    font-size: 0.72rem;
+    font-size: 0.68rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.08em;
     color: var(--green-light);
     background: var(--green-muted);
-    padding: 4px 10px;
+    padding: 3px 8px;
     border-radius: 4px;
-    margin-bottom: 12px;
+    margin-bottom: 10px;
 }
 
 .project-card__title {
-    font-size: 1.2rem;
+    font-size: 1.15rem;
     font-weight: 700;
     margin-bottom: 2px;
     letter-spacing: -0.01em;
 }
 
 .project-card__subtitle {
-    font-size: 0.82rem;
+    font-size: 0.8rem;
     color: var(--text-secondary);
 }
 
@@ -224,21 +232,21 @@ flex-direction: column;
     flex: 1;
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    margin-bottom: 24px;
+    gap: 12px;
+        margin-bottom: 16px;
 }
 
 .project-card__section h4 {
-    font-size: 0.8rem;
+    font-size: 0.75rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.06em;
     color: var(--text-muted);
-    margin-bottom: 6px;
+    margin-bottom: 4px;
 }
 
 .project-card__section p {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     color: var(--text-secondary);
     line-height: 1.6;
 }
@@ -249,11 +257,11 @@ flex-direction: column;
 }
 
 .project-card__section ul li {
-    font-size: 0.88rem;
+    font-size: 0.84rem;
     color: var(--text-secondary);
     padding-left: 16px;
     position: relative;
-    margin-bottom: 4px;
+    margin-bottom: 3px;
     line-height: 1.5;
 }
 
@@ -267,11 +275,10 @@ flex-direction: column;
 
 .project-card__footer {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-gap: 12px;
-    flex-wrap: wrap;
-    padding-top: 16px;
+    flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    padding-top: 14px;
     border-top: 1px solid var(--border-subtle);
 }
 
@@ -299,9 +306,9 @@ gap: 12px;
 /* Pills */
 .pill {
     display: inline-block;
-    font-size: 0.72rem;
+    font-size: 0.7rem;
     font-weight: 500;
-    padding: 3px 10px;
+    padding: 3px 8px;
     border-radius: 4px;
     background: rgba(255, 255, 255, 0.05);
     color: var(--text-secondary);
@@ -314,7 +321,9 @@ gap: 12px;
     border-radius: 6px;
 }
 
-/* ─── Stack Section ─── */
+/* ═══════════════════════════════════════
+   Stack Section — Mobile base
+   ═══════════════════════════════════════ */
 .stack {
     padding-block: var(--section-gap);
 }
@@ -322,29 +331,102 @@ gap: 12px;
 .stack__icons {
     display: flex;
     justify-content: center;
-    }
-    
-    .stack__icons img {
-        max-width: 100%;
-        height: auto;
 }
 
-/* ─── Mobile ─── */
-@media (max-width: 640px) {
-    .hero {
-        min-height: 90vh;
-        padding-top: 100px;
-    }
-.projects__grid {
-    grid-template-columns: 1fr;
+.stack__icons img {
+    max-width: 100%;
+    height: auto;
 }
 
-  .project-card__footer {
-      flex-direction: column;
-      align-items: flex-start;
-  }
+/* ═══════════════════════════════════════
+   Tablet (min-width: 640px)
+   ═══════════════════════════════════════ */
+@media (min-width: 640px) {
+    .container {
+        padding-inline: 24px;
+    }
 
-  .stack__grid {
-      grid-template-columns: 1fr 1fr;
-  }
+    .section__title {
+        font-size: 1.8rem;
+    }
+
+    .hero__name {
+        font-size: 3rem;
+    }
+
+    .hero__tagline {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 12px 26px;
+        font-size: 0.92rem;
+    }
+
+    .about__content p {
+        font-size: 0.98rem;
+    }
+
+        .projects__grid {
+        grid-template-columns: repeat(2, 1fr);
+        }
+        
+        .project-card {
+            padding: 20px;
+        }
+
+        .project-card__footer {
+        flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+        }
+        
+        /* ═══════════════════════════════════════
+           Desktop (min-width: 1024px)
+           ═══════════════════════════════════════ */
+        @media (min-width: 1024px) {
+            .container {
+                padding-inline: 40px;
+            }
+        
+            .section__title {
+                font-size: 2.2rem;
+            }
+        
+            .section__subtitle {
+                margin-bottom: 28px;
+            }
+        
+            .hero {
+                min-height: 80vh;
+            }
+        
+            .hero__name {
+                font-size: 4.5rem;
+                margin-bottom: 20px;
+            }
+        
+            .hero__tagline {
+                font-size: 1.15rem;
+                margin-bottom: 28px;
+            }
+        
+            .btn {
+                padding: 12px 28px;
+                font-size: 0.95rem;
+            }
+        
+            .about__content p {
+                font-size: 1.05rem;
+                line-height: 1.75;
+            }
+        
+            .projects__grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+        .project-card__title {
+            font-size: 1.2rem;
+        }
 }
