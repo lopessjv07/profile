@@ -5,65 +5,13 @@ import {
   faArrowDown,
   faArrowUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
-
-const projects = [
-  {
-    id: "ordemo",
-    label: "Produto Real",
-    title: "Ordemo",
-    subtitle: "SaaS de gerenciamento multi-serviços",
-    problem:
-      "Negócios de serviços gerenciam agenda, finanças e clientes em ferramentas separadas — sem integração e com retrabalho constante.",
-    solution:
-      "Plataforma unificada que resolve agendamento, operação, controle financeiro e relacionamento com clientes em um único sistema.",
-    highlights: [
-      "Arquitetura escalável para multi-tenant",
-      "Decisões técnicas complexas de modelagem",
-      "Produto real com foco em resolver um problema de mercado",
-    ],
-    stack: ["React", "Node.js", "Prisma", "PostgreSQL"],
-    link: "https://ordemo.app/",
-  },
-  {
-    id: "chamou",
-    label: "Em Desenvolvimento",
-    title: "Chamou",
-    subtitle: "Plataforma de vagas instantâneas — em construção ativa",
-    problem:
-      "Empresas precisam de freelancers disponíveis agora, mas plataformas tradicionais são lentas e burocráticas.",
-    solution:
-      "Matching rápido entre freelancers disponíveis e empresas com demanda imediata, com UX simplificado e foco em velocidade.",
-    highlights: [
-      "Visão de produto — da ideia à arquitetura",
-      "Modelagem completa do sistema e fluxo do usuário",
-      "Frontend e backend desenvolvidos do zero",
-    ],
-    stack: ["Next.js", "Node.js", "Prisma", "PostgreSQL"],
-    link: "https://chamou-preview.vercel.app/",
-  },
-  {
-    id: "optic",
-    label: "Projeto Técnico",
-    title: "Optic",
-    subtitle: "Automação e processamento inteligente",
-    problem:
-      "Análise e classificação manual consome tempo e está sujeita a erros em escala.",
-    solution:
-      "Pipeline automatizado com modelo de machine learning para classificação e processamento de dados de forma eficiente.",
-    highlights: [
-      "Domínio técnico em ML e automação",
-      "Resolução de problemas complexos fora do web",
-      "Capacidade de aprender e aplicar tecnologias novas",
-    ],
-    stack: ["Python", "TensorFlow"],
-    link: "https://optic-zeta.vercel.app/",
-  },
-];
-
-
+import { useLanguage } from "../../i18n/i18n";
 
 function Body() {
   const glowRef = useRef<HTMLDivElement>(null);
+  const { t, tProjects } = useLanguage();
+
+  const projects = tProjects();
 
   useEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -82,16 +30,16 @@ function Body() {
       {/* ──── Hero ──── */}
       <section className="hero" id="hero">
         <div className="container">
-          <p className="hero__greeting">Olá, eu sou</p>
+          <p className="hero__greeting">{t("hero.greeting")}</p>
           <h1 className="hero__name">
             João Vitor <span className="hero__accent">Lopes</span>
           </h1>
           <p className="hero__tagline">
-            Construo produtos digitais do zero — da arquitetura ao deploy.
+            {t("hero.tagline")}
           </p>
           <div className="hero__actions">
             <a href="#projetos" className="btn btn--primary">
-              Ver projetos <FontAwesomeIcon icon={faArrowDown} />
+              {t("hero.cta")} <FontAwesomeIcon icon={faArrowDown} />
             </a>
             <a
               href="https://github.com/lopessjv07"
@@ -108,22 +56,17 @@ function Body() {
       {/* ──── Sobre ──── */}
       <section className="about" id="sobre">
         <div className="container">
-          <h2 className="section__title">Sobre mim</h2>
+          <h2 className="section__title">{t("about.title")}</h2>
           <div className="about__content">
+            <p>{t("about.p1")}</p>
             <p>
-              Dev fullstack com mentalidade de produto. Não só codifico — eu
-              modelo, projeto e entrego sistemas completos em produção.
+              {t("about.p2.before")}
+              <strong>{t("about.p2.school")}</strong>
+              {t("about.p2.middle")}
+              <strong>{t("about.p2.techs")}</strong>
+              {t("about.p2.after")}
             </p>
-            <p>
-              Formado em Técnico em Desenvolvimento de Sistemas pelo{" "}
-              <strong>Senai</strong>, com base sólida em lógica, estrutura de
-              dados e arquitetura web. Trabalho com{" "}
-              <strong>React, Node.js, TypeScript e Prisma</strong>.
-            </p>
-            <p>
-              Meu foco não é só escrever código — é entender o problema,
-              modelar a solução e entregar algo que funcione de verdade.
-            </p>
+            <p>{t("about.p3")}</p>
           </div>
         </div>
       </section>
@@ -131,9 +74,9 @@ function Body() {
       {/* ──── Projetos ──── */}
       <section className="projects" id="projetos">
         <div className="container">
-          <h2 className="section__title">Projetos</h2>
+          <h2 className="section__title">{t("projects.title")}</h2>
           <p className="section__subtitle">
-            Produtos reais com decisões técnicas e visão de negócio.
+            {t("projects.subtitle")}
           </p>
 
           <div className="projects__grid">
@@ -147,17 +90,17 @@ function Body() {
 
                 <div className="project-card__body">
                   <div className="project-card__section">
-                    <h4>Problema</h4>
+                    <h4>{t("projects.problem")}</h4>
                     <p>{project.problem}</p>
                   </div>
 
                   <div className="project-card__section">
-                    <h4>Solução</h4>
+                    <h4>{t("projects.solution")}</h4>
                     <p>{project.solution}</p>
                   </div>
 
                   <div className="project-card__section">
-                    <h4>Destaques</h4>
+                    <h4>{t("projects.highlights")}</h4>
                     <ul>
                       {project.highlights.map((h, i) => (
                         <li key={i}>{h}</li>
@@ -180,7 +123,7 @@ function Body() {
                     rel="noopener noreferrer"
                     className="project-card__link"
                   >
-                    Ver projeto{" "}
+                    {t("projects.viewProject")}{" "}
                     <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
                   </a>
                 </div>

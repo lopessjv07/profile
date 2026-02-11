@@ -2,15 +2,17 @@ import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { useLanguage } from "../../i18n/i18n";
 
 function Footer() {
+  const { t } = useLanguage();
+
   return (
     <footer className="footer" id="contato">
       <div className="footer__inner">
-        <h2 className="footer__title">Vamos conversar?</h2>
+        <h2 className="footer__title">{t("footer.title")}</h2>
         <p className="footer__subtitle">
-          Se quiser trocar uma ideia sobre produto, código ou oportunidades —
-          me chama.
+          {t("footer.subtitle")}
         </p>
 
         <div className="footer__links">
