@@ -41,22 +41,25 @@
 .footer__links a {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    color: var(--text-secondary);
-    font-size: 0.88rem;
-    font-weight: 500;
-    padding: 10px 16px;
-    border: 1px solid var(--border-card);
-    border-radius: 8px;
+    gap: 10px;
+        color: var(--text-primary);
+        font-size: 0.95rem;
+        font-weight: 600;
+        padding: 12px 24px;
+        background: var(--bg-card);
+        border: 1px solid var(--border-subtle);
+        border-radius: 6px;
     transition: all var(--transition-base);
     text-decoration: none;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
 }
 
 .footer__links a:hover {
-    color: var(--green-light);
-    border-color: var(--border-hover);
-    background: var(--green-muted);
+    color: var(--green-brand);
+        border-color: var(--green-brand);
+        background: var(--bg-card-hover);
     transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .footer__copy {

@@ -19,11 +19,11 @@ function Footer() {
 
         <div className="footer__links">
           <a
-            href="https://github.com/lopessjv07"
+            href="mailto:hi@lopessdev.net?subject=Contato via Portfólio"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faGithub} /> GitHub
+            <FontAwesomeIcon icon={faEnvelope} /> hi@lopessdev.net
           </a>
           <a
             href="https://www.linkedin.com/in/jo%C3%A3o-vitor-lopes-467714312/"
@@ -33,11 +33,11 @@ function Footer() {
             <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
           </a>
           <a
-            href="mailto:joaovitor@email.com?subject=Contato via Portfólio"
+            href="https://github.com/lopessjv07"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FontAwesomeIcon icon={faEnvelope} /> Email
+            <FontAwesomeIcon icon={faGithub} /> GitHub
           </a>
         </div>
 

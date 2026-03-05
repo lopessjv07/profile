@@ -8,6 +8,7 @@ import {
   faArrowUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { useLanguage } from "../../i18n/i18n";
+import Services from "../Services";
 
 function Body() {
   const glowRef = useRef<HTMLDivElement>(null);
@@ -57,6 +58,9 @@ function Body() {
           </div>
         </div>
       </section>
+
+      {/* ──── Serviços ──── */}
+      <Services />
 
       {/* ──── Sobre ──── */}
       <section className="about" id="sobre">

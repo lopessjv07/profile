@@ -59,6 +59,19 @@ const translations: Record<Lang, Translations> = {
     "about.p3":
       "Meu foco não é só escrever código — é entender o problema, modelar a solução e entregar algo que funcione de verdade.",
 
+    "services.title": "Serviços",
+    "services.s1.title": "High-Conversion Landing Pages",
+    "services.s1.desc": "Desenvolvimento de páginas ultrarrápidas focadas em transformar visitantes em clientes. Otimizadas especificamente para campanhas de tráfego pago (Google/Meta Ads) com foco total em Core Web Vitals e conversão mobile.",
+    "services.s1.tech": "Zero-runtime CSS & Next.js Image Optimization",
+
+    "services.s2.title": "Institutional & Brand Websites",
+    "services.s2.desc": "Criação de presença digital para empresas que buscam autoridade no mercado internacional. Sites escaláveis, com SEO técnico avançado e design minimalista que comunica profissionalismo e solidez.",
+    "services.s2.tech": "Clean Code architecture & SSR",
+
+    "services.s3.title": "Custom Web Platforms & SaaS",
+    "services.s3.desc": "Desenvolvimento de softwares sob medida para automação de processos. De dashboards financeiros a sistemas de agendamento complexos. Transformo lógica de negócio em ferramentas digitais escaláveis e seguras.",
+    "services.s3.tech": "Complex State Management & APIs",
+
     "projects.title": "Projetos",
     "projects.subtitle": "Produtos reais com decisões técnicas e visão de negócio.",
     "projects.problem": "Problema",
@@ -66,9 +79,9 @@ const translations: Record<Lang, Translations> = {
     "projects.highlights": "Destaques",
     "projects.viewProject": "Ver projeto",
 
-    "footer.title": "Vamos conversar?",
+    "footer.title": "Pronto para escalar seu próximo projeto?",
     "footer.subtitle":
-      "Se quiser trocar uma ideia sobre produto, código ou oportunidades — me chama.",
+      "Seja para um SaaS de alta performance, uma solução de IA ou uma landing page focada em conversão — vamos construir juntos.",
 
     projects: [
       {
@@ -147,6 +160,19 @@ const translations: Record<Lang, Translations> = {
     "about.p3":
       "My focus isn't just writing code — it's understanding the problem, modeling the solution, and delivering something that truly works.",
 
+    "services.title": "Services",
+    "services.s1.title": "High-Conversion Landing Pages",
+    "services.s1.desc": "Development of ultra-fast pages focused on turning visitors into customers. Optimized specifically for paid traffic campaigns (Google/Meta Ads) with a total focus on Core Web Vitals and mobile conversion.",
+    "services.s1.tech": "Zero-runtime CSS & Next.js Image Optimization",
+
+    "services.s2.title": "Institutional & Brand Websites",
+    "services.s2.desc": "Creating digital presence for companies seeking authority in the international market. Scalable sites with advanced technical SEO and minimalist design communicating professionalism and solidity.",
+    "services.s2.tech": "Clean Code architecture & SSR",
+
+    "services.s3.title": "Custom Web Platforms & SaaS",
+    "services.s3.desc": "Development of custom software for process automation. From financial dashboards to complex scheduling systems. I transform business logic into scalable and secure digital tools.",
+    "services.s3.tech": "Complex State Management & APIs",
+
     "projects.title": "Projects",
     "projects.subtitle": "Real products with technical decisions and business vision.",
     "projects.problem": "Problem",
@@ -154,9 +180,9 @@ const translations: Record<Lang, Translations> = {
     "projects.highlights": "Highlights",
     "projects.viewProject": "View project",
 
-    "footer.title": "Let's talk?",
+    "footer.title": "Ready to scale your next project?",
     "footer.subtitle":
-      "If you want to chat about product, code, or opportunities — reach out.",
+      "Whether you're looking for a high-performance SaaS, an AI-driven solution, or a conversion-focused landing page—let’s build it together.",
 
     projects: [
       {
