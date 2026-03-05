@@ -1,3 +1,5 @@
+"use client";
+
 import { createContext, useContext, useState, useEffect, type ReactNode } from "react";
 
 /* ═══════════════════════════════════════
@@ -42,7 +44,8 @@ const translations: Record<Lang, Translations> = {
     "nav.contact": "Contato",
 
     "hero.greeting": "Olá, eu sou",
-    "hero.tagline": "Construo produtos digitais do zero — da arquitetura ao deploy.",
+    "hero.tagline": "Construo experiências web de alta performance que convertem visitantes em clientes.",
+    "hero.techs": "Utilizando Next.js + Framer Motion para entregar velocidade extrema.",
     "hero.cta": "Ver projetos",
 
     "about.title": "Sobre mim",
@@ -70,51 +73,51 @@ const translations: Record<Lang, Translations> = {
     projects: [
       {
         id: "ordemo",
-        label: "Produto Real",
-        title: "Ordemo",
-        subtitle: "SaaS de gerenciamento multi-serviços",
+        label: "GTMetrix Grade A | 86% Performance",
+        title: "Ordemo - Enterprise Business Management & SaaS",
+        subtitle: "Arquitetura proprietária focada em segurança financeira.",
         problem:
           "Negócios de serviços gerenciam agenda, finanças e clientes em ferramentas separadas — sem integração e com retrabalho constante.",
         solution:
-          "Plataforma unificada que resolve agendamento, operação, controle financeiro e relacionamento com clientes em um único sistema.",
+          "Uma plataforma SaaS robusta desenhada para centralizar finanças, agendamentos e CRM em um único fluxo de trabalho. Focada em integridade de dados e performance crítica.",
         highlights: [
-          "Arquitetura escalável para multi-tenant",
-          "Decisões técnicas complexas de modelagem",
-          "Produto real com foco em resolver um problema de mercado",
+          "Arquitetura proprietária focada em segurança financeira",
+          "Gestão de escala corporativa",
+          "Alta performance de carregamento",
         ],
         stack: ["React", "Node.js", "Prisma", "PostgreSQL"],
         link: "https://ordemo.app/",
       },
       {
         id: "chamou",
-        label: "Em Desenvolvimento",
-        title: "Chamou",
-        subtitle: "Plataforma de vagas instantâneas — em construção ativa",
+        label: "Escalabilidade e Conexão de Mercado",
+        title: "Chamou - Professional Freelance Ecosystem",
+        subtitle: "Marketplace de Duas Pontas (Clientes vs. Profissionais)",
         problem:
           "Empresas precisam de freelancers disponíveis agora, mas plataformas tradicionais são lentas e burocráticas.",
         solution:
-          "Matching rápido entre freelancers disponíveis e empresas com demanda imediata, com UX simplificado e foco em velocidade.",
+          "Arquitetura de ecossistema para conexão de talentos. Desenvolvido com foco em UX fluida, gerenciamento de estados complexos e um sistema de 'matching' em tempo real.",
         highlights: [
-          "Visão de produto — da ideia à arquitetura",
-          "Modelagem completa do sistema e fluxo do usuário",
-          "Frontend e backend desenvolvidos do zero",
+          "Design e experiência do usuário impecáveis",
+          "Animações fluidas com Framer Motion",
+          "Performance focada em redes",
         ],
         stack: ["Next.js", "Node.js", "Prisma", "PostgreSQL"],
         link: "https://chamou-preview.vercel.app/",
       },
       {
         id: "optic",
-        label: "Projeto Técnico",
-        title: "Optic",
-        subtitle: "Automação e processamento inteligente",
+        label: "Processamento e Segurança",
+        title: "Optic - AI-Driven Community Intelligence",
+        subtitle: "Bot inteligente para proteção de servidores no Discord.",
         problem:
           "Análise e classificação manual consome tempo e está sujeita a erros em escala.",
         solution:
-          "Pipeline automatizado com modelo de machine learning para classificação e processamento de dados de forma eficiente.",
+          "Bot de moderação integrado ao Discord que utiliza Redes Neurais customizadas (.h5) Aliadas à IA para proteger comunidades em tempo real. Identifica padrões de ameaça e automatiza a segurança de servidores com milhares de membros de forma autônoma.",
         highlights: [
-          "Domínio técnico em ML e automação",
-          "Resolução de problemas complexos fora do web",
-          "Capacidade de aprender e aplicar tecnologias novas",
+          "Segurança de comunidades com Inteligência Artificial",
+          "Integração contínua como Bot do Discord",
+          "Redes Neurais customizadas processadas em tempo real",
         ],
         stack: ["Python", "TensorFlow"],
         link: "https://optic-zeta.vercel.app/",
@@ -129,7 +132,8 @@ const translations: Record<Lang, Translations> = {
     "nav.contact": "Contact",
 
     "hero.greeting": "Hi, I'm",
-    "hero.tagline": "I build digital products from scratch — from architecture to deploy.",
+    "hero.tagline": "I build high-performance web experiences that convert visitors into customers.",
+    "hero.techs": "Using Next.js + Framer Motion to deliver extreme speed.",
     "hero.cta": "See projects",
 
     "about.title": "About me",
@@ -157,51 +161,51 @@ const translations: Record<Lang, Translations> = {
     projects: [
       {
         id: "ordemo",
-        label: "Real Product",
-        title: "Ordemo",
-        subtitle: "Multi-service management SaaS",
+        label: "GTMetrix Grade A | 86% Performance",
+        title: "Ordemo - Enterprise Business Management & SaaS",
+        subtitle: "Proprietary architecture focused on financial security.",
         problem:
           "Service businesses manage scheduling, finances, and clients across separate tools — with no integration and constant rework.",
         solution:
-          "Unified platform that handles scheduling, operations, financial control, and customer relations in a single system.",
+          "A robust SaaS platform designed to centralize finances, scheduling, and CRM into a single workflow. Focused on data integrity and mission-critical performance.",
         highlights: [
-          "Scalable multi-tenant architecture",
-          "Complex technical modeling decisions",
-          "Real product focused on solving a market problem",
+          "Proprietary architecture focused on financial security",
+          "Enterprise-scale management",
+          "High loading performance",
         ],
         stack: ["React", "Node.js", "Prisma", "PostgreSQL"],
         link: "https://ordemo.app/",
       },
       {
         id: "chamou",
-        label: "In Development",
-        title: "Chamou",
-        subtitle: "Instant job platform — actively being built",
+        label: "Scalability and Market Connection",
+        title: "Chamou - Professional Freelance Ecosystem",
+        subtitle: "Two-Sided Marketplace (Clients vs. Professionals)",
         problem:
           "Companies need freelancers available right now, but traditional platforms are slow and bureaucratic.",
         solution:
-          "Fast matching between available freelancers and companies with immediate demand, with simplified UX and focus on speed.",
+          "Ecosystem architecture for talent connection. Developed with a focus on fluid UX, complex state management, and a real-time 'matching' system.",
         highlights: [
-          "Product vision — from idea to architecture",
-          "Complete system modeling and user flow",
-          "Frontend and backend built from scratch",
+          "Impeccable design and user experience",
+          "Fluid animations with Framer Motion",
+          "Network-focused performance",
         ],
         stack: ["Next.js", "Node.js", "Prisma", "PostgreSQL"],
         link: "https://chamou-preview.vercel.app/",
       },
       {
         id: "optic",
-        label: "Technical Project",
-        title: "Optic",
-        subtitle: "Automation and intelligent processing",
+        label: "Processing and Security",
+        title: "Optic - AI-Driven Community Intelligence",
+        subtitle: "Intelligent AI-Bot for Discord server protection.",
         problem:
           "Manual analysis and classification is time-consuming and error-prone at scale.",
         solution:
-          "Automated pipeline with a machine learning model for efficient data classification and processing.",
+          "Discord-integrated moderation bot leveraging AI and customized Neural Networks (.h5) to protect communities in real-time. Autonomously identifies threat patterns and automates security for servers with thousands of members.",
         highlights: [
-          "Technical mastery in ML and automation",
-          "Solving complex problems beyond the web",
-          "Ability to learn and apply new technologies",
+          "Community security via Artificial Intelligence",
+          "Seamless integration as a Discord Bot",
+          "Real-time processing of Custom Neural Networks",
         ],
         stack: ["Python", "TensorFlow"],
         link: "https://optic-zeta.vercel.app/",

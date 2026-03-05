@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useRef } from "react";
 import "./Body.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -36,6 +38,9 @@ function Body() {
           </h1>
           <p className="hero__tagline">
             {t("hero.tagline")}
+          </p>
+          <p className="hero__tagline" style={{ marginTop: '0.5rem', opacity: 0.8, fontSize: '0.9em' }}>
+            {t("hero.techs")}
           </p>
           <div className="hero__actions">
             <a href="#projetos" className="btn btn--primary">
