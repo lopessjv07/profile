@@ -44,17 +44,15 @@ const translations: Record<Lang, Translations> = {
     "nav.contact": "Contato",
 
     "hero.greeting": "Olá, eu sou",
-    "hero.tagline": "Construo sites ultrarrápidos que convertem tráfego em clientes.",
-    "hero.techs": "Construído para velocidade, SEO e conversões.",
-    "hero.cta": "Iniciar um projeto",
+    "hero.tagline": "Desenvolvedor Full-Stack construindo aplicações web e sites corporativos de alta performance.",
+    "hero.techs": "Ajudo empresas e equipes a construir plataformas web rápidas, escaláveis e modernas.",
+    "hero.cta_work": "Ver meu trabalho",
+    "hero.cta_about": "Sobre",
 
-    "about.title": "Sobre mim",
+    "about.title": "Sobre",
     "about.p1":
-      "Sou um desenvolvedor fullstack com foco em negócios. Meu objetivo não é apenas escrever código — é entender a sua operação e criar soluções que gerem resultados reais.",
-    "about.p2": 
-      "Com sólida base em arquitetura de software, garanto que o seu projeto seja seguro, rápido e pronto para crescer junto com a sua empresa. Crio plataformas robustas sem dores de cabeça técnicas no futuro.",
-    "about.p3":
-      "Transformo problemas complexos em sistemas fáceis de usar, automatizando processos para que sua equipe ganhe tempo e você possa focar no que importa: escalar suas vendas.",
+      "Sou o Lopes, um desenvolvedor focado em construir aplicações web rápidas e escaláveis usando tecnologias modernas.",
+
 
     "performance.title": "Por que meus sites performam melhor",
     "performance.subtitle": "Velocidade do site afeta diretamente as conversões.",
@@ -156,17 +154,15 @@ const translations: Record<Lang, Translations> = {
     "nav.contact": "Contact",
 
     "hero.greeting": "Hi, I'm",
-    "hero.tagline": "I build ultra-fast websites that turn traffic into customers.",
-    "hero.techs": "Built for speed, SEO and conversions.",
-    "hero.cta": "Start a project",
+    "hero.tagline": "Full-Stack Developer building high-performance web applications and business websites.",
+    "hero.techs": "I help businesses and teams build fast, scalable and modern web platforms.",
+    "hero.cta_work": "View my work",
+    "hero.cta_about": "About",
 
-    "about.title": "About me",
+    "about.title": "About",
     "about.p1":
-      "I'm a business-minded fullstack developer. My goal isn't just to deliver lines of code — it's to understand your operation and create solutions that drive real business results.",
-    "about.p2":
-      "With a solid foundation in software architecture, I ensure your project is secure, lightning-fast, and ready to scale alongside your company. I build robust platforms to prevent technical headaches in the future.",
-    "about.p3":
-      "I transform complex problems into easy-to-use systems, automating processes so your team saves time and you can focus on what matters most: scaling your operations and sales.",
+      "I'm Lopes, a developer focused on building fast and scalable web applications using modern technologies.",
+
 
     "performance.title": "Why my websites perform better",
     "performance.subtitle": "Website speed directly affects conversions.",

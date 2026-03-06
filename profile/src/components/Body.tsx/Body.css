@@ -331,11 +331,100 @@
 .stack__icons {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
+        gap: 16px;
+        padding: 24px 0;
+        align-items: center;
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .stack-item {
+        position: relative;
+        cursor: pointer;
+        transition: transform 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+    
+    .stack-item:hover {
+        transform: scale(1.3) translateY(-8px);
+        z-index: 10;
+    }
+    
+    .stack-icon {
+        width: 45px;
+        height: 45px;
+        background-image: url('/stack.svg');
+        background-size: 920.3125% 100%;
+        background-repeat: no-repeat;
+        display: block;
+        border-radius: 12px;
+    }
+    
+    .icon-ubuntu {
+        background-position: 0% 0;
+    }
+    
+    .icon-typescript {
+        background-position: 14.2857% 0;
+    }
+    
+    .icon-python {
+        background-position: 28.5714% 0;
+    }
+    
+    .icon-postgresql {
+        background-position: 42.8571% 0;
+    }
+    
+    .icon-nodejs {
+        background-position: 57.1428% 0;
 }
 
-.stack__icons img {
-    max-width: 100%;
-    height: auto;
+.icon-react {
+    background-position: 71.4285% 0;
+}
+
+.icon-vite {
+    background-position: 85.7142% 0;
+}
+
+.icon-nextjs {
+    background-position: 100% 0;
+}
+
+.stack-tooltip {
+    position: absolute;
+    top: -45px;
+    left: 50%;
+    transform: translateX(-50%) translateY(10px);
+    background: rgba(30, 30, 30, 0.9);
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.2s ease-out;
+    white-space: nowrap;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.stack-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px 5px 0;
+    border-style: solid;
+    border-color: rgba(30, 30, 30, 0.9) transparent transparent transparent;
+}
+
+.stack-item:hover .stack-tooltip {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
 }
 
 /* ═══════════════════════════════════════

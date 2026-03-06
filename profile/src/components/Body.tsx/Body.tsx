@@ -8,7 +8,7 @@ import {
   faArrowUpRightFromSquare,
 } from "@fortawesome/free-solid-svg-icons";
 import { useLanguage } from "../../i18n/i18n";
-import Services from "../Services";
+
 
 function Body() {
   const glowRef = useRef<HTMLDivElement>(null);
@@ -44,55 +44,30 @@ function Body() {
             {t("hero.techs")}
           </p>
           <div className="hero__actions">
-            <a href="#contato" className="btn btn--primary">
-              {t("hero.cta")} <FontAwesomeIcon icon={faArrowDown} />
+            <a href="#projetos" className="btn btn--primary">
+              {t("hero.cta_work")} <FontAwesomeIcon icon={faArrowDown} />
             </a>
             <a
-              href="https://github.com/lopessjv07"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="#sobre"
               className="btn btn--outline"
             >
-              GitHub <FontAwesomeIcon icon={faArrowUpRightFromSquare} />
+              {t("hero.cta_about")}
             </a>
           </div>
         </div>
       </section>
 
-      {/* ──── Serviços ──── */}
-      <Services />
 
       {/* ──── Sobre ──── */}
       <section className="about" id="sobre">
         <div className="container">
-          <h2 className="section__title">{t("about.title")}</h2>
-          <div className="about__content">
-            <p>{t("about.p1")}</p>
-            <p>{t("about.p2")}</p>
-            <p>{t("about.p3")}</p>
+          <div className="about__content" style={{ margin: "0 auto", textAlign: "center" }}>
+            <p style={{ fontSize: "1.1rem" }}>{t("about.p1")}</p>
           </div>
         </div>
       </section>
 
-      {/* ──── Performance ──── */}
-      <section className="performance" id="performance" style={{ padding: "4rem 0" }}>
-        <div className="container">
-          <h2 className="section__title">{t("performance.title")}</h2>
-          <p className="section__subtitle" style={{ opacity: 0.8, marginBottom: "2rem" }}>
-            {t("performance.subtitle")}
-          </p>
-          
-          <div className="about__content">
-            <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "1rem", marginBottom: "2rem" }}>
-              <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}><span style={{ color: "var(--color-primary)" }}>⚡</span> {t("performance.point1")}</li>
-              <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}><span style={{ color: "var(--color-primary)" }}>⚡</span> {t("performance.point2")}</li>
-              <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}><span style={{ color: "var(--color-primary)" }}>⚡</span> {t("performance.point3")}</li>
-              <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}><span style={{ color: "var(--color-primary)" }}>⚡</span> {t("performance.point4")}</li>
-            </ul>
-            <p><strong>{t("performance.conclusion")}</strong></p>
-          </div>
-        </div>
-      </section>
+
 
       {/* ──── Projetos ──── */}
       <section className="projects" id="projetos">
@@ -160,10 +135,21 @@ function Body() {
       <section className="stack" id="stack">
         <div className="container">
           <div className="stack__icons">
-            <img
-              src="/stack.svg"
-              alt="Tech Stack: Ubuntu, TypeScript, Python, PostgreSQL, Node.js, React, Vite, Next.js"
-            />
+            {[
+              { id: 'ubuntu', name: 'Ubuntu', className: 'icon-ubuntu' },
+              { id: 'typescript', name: 'TypeScript', className: 'icon-typescript' },
+              { id: 'python', name: 'Python', className: 'icon-python' },
+              { id: 'postgresql', name: 'PostgreSQL', className: 'icon-postgresql' },
+              { id: 'nodejs', name: 'Node.js', className: 'icon-nodejs' },
+              { id: 'react', name: 'React', className: 'icon-react' },
+              { id: 'vite', name: 'Vite', className: 'icon-vite' },
+              { id: 'nextjs', name: 'Next.js', className: 'icon-nextjs' },
+            ].map(tech => (
+              <div key={tech.id} className="stack-item">
+                <div className="stack-tooltip">{tech.name}</div>
+                <div className={`stack-icon ${tech.className}`}></div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
