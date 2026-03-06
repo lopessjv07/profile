@@ -18,16 +18,16 @@ function Header() {
         </a>
 
         <nav className="header__nav">
-          <a href="#sobre" className="header__link">
+          <a href="#sobre" className="header__link" suppressHydrationWarning>
             {t("nav.about")}
           </a>
-          <a href="#projetos" className="header__link">
+          <a href="#projetos" className="header__link" suppressHydrationWarning>
             {t("nav.projects")}
           </a>
-          <a href="#stack" className="header__link">
+          <a href="#stack" className="header__link" suppressHydrationWarning>
             {t("nav.stack")}
           </a>
-          <a href="#contato" className="header__link">
+          <a href="#contato" className="header__link" suppressHydrationWarning>
             {t("nav.contact")}
           </a>
         </nav>
@@ -38,6 +38,7 @@ function Header() {
             onClick={toggleLang}
             aria-label="Toggle language"
             title={lang === "pt" ? "Switch to English" : "Mudar para Português"}
+            suppressHydrationWarning
           >
             {lang === "pt" ? "🇧🇷 PT" : "🇺🇸 EN"}
           </button>

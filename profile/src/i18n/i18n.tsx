@@ -44,33 +44,44 @@ const translations: Record<Lang, Translations> = {
     "nav.contact": "Contato",
 
     "hero.greeting": "Olá, eu sou",
-    "hero.tagline": "Construo experiências web de alta performance que convertem visitantes em clientes.",
-    "hero.techs": "Utilizando Next.js + Framer Motion para entregar velocidade extrema.",
-    "hero.cta": "Ver projetos",
+    "hero.tagline": "Construo sites ultrarrápidos que convertem tráfego em clientes.",
+    "hero.techs": "Construído para velocidade, SEO e conversões.",
+    "hero.cta": "Iniciar um projeto",
 
     "about.title": "Sobre mim",
     "about.p1":
-      "Dev fullstack com mentalidade de produto. Não só codifico — eu modelo, projeto e entrego sistemas completos em produção.",
-    "about.p2.before": "Formado em Técnico em Desenvolvimento de Sistemas pelo ",
-    "about.p2.school": "Senai",
-    "about.p2.middle": ", com base sólida em lógica, estrutura de dados e arquitetura web. Trabalho com ",
-    "about.p2.techs": "React, Node.js, TypeScript e Prisma",
-    "about.p2.after": ".",
+      "Sou um desenvolvedor fullstack com foco em negócios. Meu objetivo não é apenas escrever código — é entender a sua operação e criar soluções que gerem resultados reais.",
+    "about.p2": 
+      "Com sólida base em arquitetura de software, garanto que o seu projeto seja seguro, rápido e pronto para crescer junto com a sua empresa. Crio plataformas robustas sem dores de cabeça técnicas no futuro.",
     "about.p3":
-      "Meu foco não é só escrever código — é entender o problema, modelar a solução e entregar algo que funcione de verdade.",
+      "Transformo problemas complexos em sistemas fáceis de usar, automatizando processos para que sua equipe ganhe tempo e você possa focar no que importa: escalar suas vendas.",
+
+    "performance.title": "Por que meus sites performam melhor",
+    "performance.subtitle": "Velocidade do site afeta diretamente as conversões.",
+    "performance.point1": "Carregam em menos de 1 segundo",
+    "performance.point2": "Construídos para SEO",
+    "performance.point3": "Maior taxa de conversão",
+    "performance.point4": "Arquitetura escalável",
+    "performance.conclusion": "Sites lentos perdem clientes. Eu construo sites que carregam instantaneamente e convertem tráfego em receita.",
 
     "services.title": "Serviços",
     "services.s1.title": "High-Conversion Landing Pages",
-    "services.s1.desc": "Desenvolvimento de páginas ultrarrápidas focadas em transformar visitantes em clientes. Otimizadas especificamente para campanhas de tráfego pago (Google/Meta Ads) com foco total em Core Web Vitals e conversão mobile.",
-    "services.s1.tech": "Zero-runtime CSS & Next.js Image Optimization",
+    "services.s1.desc": "Páginas focadas em transformar visitantes em clientes. Otimizadas para maximizar o retorno do seu investimento em tráfego pago, garantindo que você não perca vendas por lentidão ou design confuso.",
+    "services.s1.b1": "Carregamento ultrarrápido",
+    "services.s1.b2": "Maior taxa de conversão",
+    "services.s1.b3": "Perfeito para Google/Meta Ads",
 
     "services.s2.title": "Institutional & Brand Websites",
-    "services.s2.desc": "Criação de presença digital para empresas que buscam autoridade no mercado internacional. Sites escaláveis, com SEO técnico avançado e design minimalista que comunica profissionalismo e solidez.",
-    "services.s2.tech": "Clean Code architecture & SSR",
+    "services.s2.desc": "Criação de presença digital para empresas que buscam autoridade no mercado. Um site profissional que transmite confiança e garante que sua empresa seja encontrada com facilidade.",
+    "services.s2.b1": "Melhor ranqueamento no Google",
+    "services.s2.b2": "Transmite autoridade e confiança",
+    "services.s2.b3": "Design focado no seu cliente",
 
     "services.s3.title": "Custom Web Platforms & SaaS",
-    "services.s3.desc": "Desenvolvimento de softwares sob medida para automação de processos. De dashboards financeiros a sistemas de agendamento complexos. Transformo lógica de negócio em ferramentas digitais escaláveis e seguras.",
-    "services.s3.tech": "Complex State Management & APIs",
+    "services.s3.desc": "Ferramentas sob medida para simplificar processos do seu negócio. Transformo problemas complexos em plataformas fáceis de usar que economizam tempo e dinheiro da sua equipe.",
+    "services.s3.b1": "Redução de custos operacionais",
+    "services.s3.b2": "Automação de processos manuais",
+    "services.s3.b3": "Escalável para o seu crescimento",
 
     "projects.title": "Projetos",
     "projects.subtitle": "Produtos reais com decisões técnicas e visão de negócio.",
@@ -90,9 +101,9 @@ const translations: Record<Lang, Translations> = {
         title: "Ordemo - Enterprise Business Management & SaaS",
         subtitle: "Arquitetura proprietária focada em segurança financeira.",
         problem:
-          "Negócios de serviços gerenciam agenda, finanças e clientes em ferramentas separadas — sem integração e com retrabalho constante.",
+          "Empresas gerenciam agenda, clientes e finanças em ferramentas separadas.",
         solution:
-          "Uma plataforma SaaS robusta desenhada para centralizar finanças, agendamentos e CRM em um único fluxo de trabalho. Focada em integridade de dados e performance crítica.",
+          "Uma plataforma SaaS unificada que centraliza as operações em um único sistema.",
         highlights: [
           "Arquitetura proprietária focada em segurança financeira",
           "Gestão de escala corporativa",
@@ -145,33 +156,44 @@ const translations: Record<Lang, Translations> = {
     "nav.contact": "Contact",
 
     "hero.greeting": "Hi, I'm",
-    "hero.tagline": "I build high-performance web experiences that convert visitors into customers.",
-    "hero.techs": "Using Next.js + Framer Motion to deliver extreme speed.",
-    "hero.cta": "See projects",
+    "hero.tagline": "I build ultra-fast websites that turn traffic into customers.",
+    "hero.techs": "Built for speed, SEO and conversions.",
+    "hero.cta": "Start a project",
 
     "about.title": "About me",
     "about.p1":
-      "Fullstack developer with a product mindset. I don't just code — I model, design, and deliver complete systems in production.",
-    "about.p2.before": "Graduated as a Systems Development Technician from ",
-    "about.p2.school": "Senai",
-    "about.p2.middle": ", with a solid foundation in logic, data structures, and web architecture. I work with ",
-    "about.p2.techs": "React, Node.js, TypeScript, and Prisma",
-    "about.p2.after": ".",
+      "I'm a business-minded fullstack developer. My goal isn't just to deliver lines of code — it's to understand your operation and create solutions that drive real business results.",
+    "about.p2":
+      "With a solid foundation in software architecture, I ensure your project is secure, lightning-fast, and ready to scale alongside your company. I build robust platforms to prevent technical headaches in the future.",
     "about.p3":
-      "My focus isn't just writing code — it's understanding the problem, modeling the solution, and delivering something that truly works.",
+      "I transform complex problems into easy-to-use systems, automating processes so your team saves time and you can focus on what matters most: scaling your operations and sales.",
+
+    "performance.title": "Why my websites perform better",
+    "performance.subtitle": "Website speed directly affects conversions.",
+    "performance.point1": "Load under 1 second",
+    "performance.point2": "Built for SEO",
+    "performance.point3": "Higher conversion rate",
+    "performance.point4": "Scalable architecture",
+    "performance.conclusion": "Slow websites lose customers. I build websites that load instantly and convert traffic into revenue.",
 
     "services.title": "Services",
     "services.s1.title": "High-Conversion Landing Pages",
-    "services.s1.desc": "Development of ultra-fast pages focused on turning visitors into customers. Optimized specifically for paid traffic campaigns (Google/Meta Ads) with a total focus on Core Web Vitals and mobile conversion.",
-    "services.s1.tech": "Zero-runtime CSS & Next.js Image Optimization",
+    "services.s1.desc": "Pages focused on turning visitors into customers. Optimized to maximize your return on ad spend, ensuring you don't lose sales due to slow loading or confusing design.",
+    "services.s1.b1": "Faster loading pages",
+    "services.s1.b2": "Higher conversion rates",
+    "services.s1.b3": "Perfect for paid traffic (Ads)",
 
     "services.s2.title": "Institutional & Brand Websites",
-    "services.s2.desc": "Creating digital presence for companies seeking authority in the international market. Scalable sites with advanced technical SEO and minimalist design communicating professionalism and solidity.",
-    "services.s2.tech": "Clean Code architecture & SSR",
+    "services.s2.desc": "Creating a digital presence for businesses seeking market authority. A professional website that builds trust and ensures your company is easily found.",
+    "services.s2.b1": "Better Google ranking",
+    "services.s2.b2": "Builds brand authority",
+    "services.s2.b3": "Customer-focused design",
 
     "services.s3.title": "Custom Web Platforms & SaaS",
-    "services.s3.desc": "Development of custom software for process automation. From financial dashboards to complex scheduling systems. I transform business logic into scalable and secure digital tools.",
-    "services.s3.tech": "Complex State Management & APIs",
+    "services.s3.desc": "Custom tools to simplify your business processes. I transform complex problems into easy-to-use platforms that save your team time and money.",
+    "services.s3.b1": "Reduced operational costs",
+    "services.s3.b2": "Manual process automation",
+    "services.s3.b3": "Scalable for growth",
 
     "projects.title": "Projects",
     "projects.subtitle": "Real products with technical decisions and business vision.",
@@ -191,9 +213,9 @@ const translations: Record<Lang, Translations> = {
         title: "Ordemo - Enterprise Business Management & SaaS",
         subtitle: "Proprietary architecture focused on financial security.",
         problem:
-          "Service businesses manage scheduling, finances, and clients across separate tools — with no integration and constant rework.",
+          "Businesses manage scheduling, clients and finances in separate tools.",
         solution:
-          "A robust SaaS platform designed to centralize finances, scheduling, and CRM into a single workflow. Focused on data integrity and mission-critical performance.",
+          "A unified SaaS platform that centralizes operations in a single system.",
         highlights: [
           "Proprietary architecture focused on financial security",
           "Enterprise-scale management",
@@ -247,23 +269,29 @@ const translations: Record<Lang, Translations> = {
 const LanguageContext = createContext<LanguageContextValue | null>(null);
 
 export function LanguageProvider({ children }: { children: ReactNode }) {
-  const [lang, setLangState] = useState<Lang>(() => {
+const [lang, setLangState] = useState<Lang>("en");
+  const [isClient, setIsClient] = useState(false);
+
+  useEffect(() => {
+    setIsClient(true);
     try {
       const stored = localStorage.getItem("lang");
-      if (stored === "en" || stored === "pt") return stored;
+      if (stored === "en" || stored === "pt") {
+        setLangState(stored);
+      }
     } catch {
       /* SSR / privacy mode */
     }
-    return "pt";
-  });
+  }, []);
 
   useEffect(() => {
+    if (!isClient) return;
     try {
       localStorage.setItem("lang", lang);
     } catch {
       /* ignore */
     }
-  }, [lang]);
+  }, [lang, isClient]);
 
   const setLang = (l: Lang) => setLangState(l);
 
@@ -274,6 +302,10 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
   };
 
   const tProjects = () => translations[lang].projects;
+
+  if (!isClient) {
+    return null; // Or a loading spinner, to avoid rendering mismatch before hydration
+  }
 
   return (
     <LanguageContext.Provider value={{ lang, setLang, t, tProjects }}>

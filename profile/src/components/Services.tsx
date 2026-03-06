@@ -9,17 +9,17 @@ export default function Services() {
     {
       title: t("services.s1.title"),
       desc: t("services.s1.desc"),
-      tech: t("services.s1.tech"),
+      benefits: [t("services.s1.b1"), t("services.s1.b2"), t("services.s1.b3")],
     },
     {
       title: t("services.s2.title"),
       desc: t("services.s2.desc"),
-      tech: t("services.s2.tech"),
+      benefits: [t("services.s2.b1"), t("services.s2.b2"), t("services.s2.b3")],
     },
     {
       title: t("services.s3.title"),
       desc: t("services.s3.desc"),
-      tech: t("services.s3.tech"),
+      benefits: [t("services.s3.b1"), t("services.s3.b2"), t("services.s3.b3")],
     },
   ];
 
@@ -46,9 +46,16 @@ export default function Services() {
             >
               <h3 className="service-card__title">{service.title}</h3>
               <p className="service-card__desc">{service.desc}</p>
-              <div className="service-card__tech">
-                <span className="pill">{service.tech}</span>
-              </div>
+              <ul className="service-card__benefits-list">
+                {service.benefits.map((benefit, i) => (
+                  <li key={i} className="service-card__benefit-item">
+                    <svg className="benefit-icon" viewBox="0 0 20 20" fill="currentColor">
+                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                    </svg>
+                    {benefit}
+                  </li>
+                ))}
+              </ul>
             </motion.div>
           ))}
         </div>

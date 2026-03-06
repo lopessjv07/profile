@@ -44,7 +44,7 @@ function Body() {
             {t("hero.techs")}
           </p>
           <div className="hero__actions">
-            <a href="#projetos" className="btn btn--primary">
+            <a href="#contato" className="btn btn--primary">
               {t("hero.cta")} <FontAwesomeIcon icon={faArrowDown} />
             </a>
             <a
@@ -68,14 +68,28 @@ function Body() {
           <h2 className="section__title">{t("about.title")}</h2>
           <div className="about__content">
             <p>{t("about.p1")}</p>
-            <p>
-              {t("about.p2.before")}
-              <strong>{t("about.p2.school")}</strong>
-              {t("about.p2.middle")}
-              <strong>{t("about.p2.techs")}</strong>
-              {t("about.p2.after")}
-            </p>
+            <p>{t("about.p2")}</p>
             <p>{t("about.p3")}</p>
+          </div>
+        </div>
+      </section>
+
+      {/* ──── Performance ──── */}
+      <section className="performance" id="performance" style={{ padding: "4rem 0" }}>
+        <div className="container">
+          <h2 className="section__title">{t("performance.title")}</h2>
+          <p className="section__subtitle" style={{ opacity: 0.8, marginBottom: "2rem" }}>
+            {t("performance.subtitle")}
+          </p>
+          
+          <div className="about__content">
+            <ul style={{ listStyle: "none", padding: 0, display: "flex", flexDirection: "column", gap: "1rem", marginBottom: "2rem" }}>
+              <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}><span style={{ color: "var(--color-primary)" }}>⚡</span> {t("performance.point1")}</li>
+              <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}><span style={{ color: "var(--color-primary)" }}>⚡</span> {t("performance.point2")}</li>
+              <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}><span style={{ color: "var(--color-primary)" }}>⚡</span> {t("performance.point3")}</li>
+              <li style={{ display: "flex", alignItems: "center", gap: "0.5rem" }}><span style={{ color: "var(--color-primary)" }}>⚡</span> {t("performance.point4")}</li>
+            </ul>
+            <p><strong>{t("performance.conclusion")}</strong></p>
           </div>
         </div>
       </section>
@@ -147,7 +161,7 @@ function Body() {
         <div className="container">
           <div className="stack__icons">
             <img
-              src="https://skillicons.dev/icons?i=ubuntu,ts,py,postgres,nodejs,react,vite,nextjs&theme=dark"
+              src="/stack.svg"
               alt="Tech Stack: Ubuntu, TypeScript, Python, PostgreSQL, Node.js, React, Vite, Next.js"
             />
           </div>
