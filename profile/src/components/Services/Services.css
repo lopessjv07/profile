@@ -7,30 +7,34 @@
     color: var(--text-primary);
 }
 
+.services-page>* {
+    position: relative;
+    z-index: 1;
+}
 /* ──── Hero Section ──── */
 .services-hero {
     padding: 80px 0 60px 0;
-    text-align: center;
-    border-bottom: 1px solid var(--border-subtle);
+    text-align: left;
 }
 
 .services-hero__content {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 0;
 }
 
 .services-hero__title {
-    font-size: 2.2rem;
+    font-size: 1.8rem;
     font-weight: 800;
     letter-spacing: -0.03em;
     margin-bottom: 16px;
     background: linear-gradient(to right, #fff, var(--text-secondary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .services-hero__subtitle {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: var(--text-secondary);
     margin-bottom: 32px;
     line-height: 1.6;
@@ -39,7 +43,6 @@
 /* ──── Services Grid ──── */
 .services-list {
     padding-block: var(--section-gap);
-    background: radial-gradient(circle at center top, rgba(30, 215, 96, 0.03) 0%, transparent 70%);
 }
 
 .services-grid {
@@ -50,7 +53,7 @@
 }
 
 .service-card {
-    background: var(--bg-card);
+    background: #1a1a1a;
     border: 1px solid var(--border-card);
     border-radius: 16px;
     padding: 32px 24px;
@@ -118,7 +121,6 @@
 /* ──── Recent Projects ──── */
 .services-recent {
     padding-block: var(--section-gap);
-    border-top: 1px solid var(--border-subtle);
 }
 
 .recent-grid {
@@ -129,7 +131,7 @@
 }
 
 .recent-card {
-    background: var(--bg-card);
+    background: #1a1a1a;
     border: 1px solid var(--border-card);
     border-radius: 16px;
     overflow: hidden;
@@ -182,9 +184,6 @@
 /* ──── Why Work With Me ──── */
 .services-why {
     padding-block: var(--section-gap);
-    background: var(--bg-card);
-    border-top: 1px solid var(--border-subtle);
-    border-bottom: 1px solid var(--border-subtle);
 }
 
 .why-grid {
@@ -195,7 +194,7 @@
 }
 
 .why-card {
-    background: var(--bg-body);
+    background: #0d0d0d;
     border: 1px solid var(--border-card);
     border-radius: 12px;
     padding: 24px 16px;
@@ -221,8 +220,6 @@
 /* ──── Final CTA ──── */
 .services-cta {
     padding: 80px 0;
-    border-top: 1px solid var(--border-subtle);
-    background: radial-gradient(circle at center bottom, rgba(30, 215, 96, 0.05) 0%, transparent 60%);
 }
 
 .services-cta__title {
@@ -248,11 +245,11 @@
     }
 
     .services-hero__title {
-        font-size: 3.5rem;
+        font-size: 2.8rem;
     }
 
     .services-hero__subtitle {
-        font-size: 1.25rem;
+        font-size: 1.1rem;
     }
 
     .services-grid {
@@ -282,7 +279,7 @@
     }
 
     .services-hero__title {
-        font-size: 4.5rem;
+        font-size: 3.2rem;
     }
 
     .recent-grid {
