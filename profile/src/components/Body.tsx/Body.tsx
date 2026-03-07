@@ -60,9 +60,14 @@ function Body() {
 
       {/* ──── Sobre ──── */}
       <section className="about" id="sobre">
-        <div className="container">
-          <div className="about__content" style={{ margin: "0 auto", textAlign: "center" }}>
+        <div className="container" style={{ display: "flex", justifyContent: "flex-start" }}>
+          <div className="about__content" style={{ maxWidth: "600px", textAlign: "left" }}>
+            <h2 style={{ color: "var(--green-light)", fontSize: "1.2rem", fontWeight: "600", marginBottom: "16px" }}>
+              {t("about.title")}
+            </h2>
             <p style={{ fontSize: "1.1rem" }}>{t("about.p1")}</p>
+            <p style={{ fontSize: "1.05rem", marginTop: "16px" }}>{t("about.p2")}</p>
+            <p style={{ fontSize: "1.05rem", marginTop: "16px" }}>{t("about.p3")}</p>
           </div>
         </div>
       </section>
@@ -132,17 +137,20 @@ function Body() {
       </section>
 
       {/* ──── Stack ──── */}
-      <section className="stack" id="stack">
-        <div className="container">
-          <div className="stack__icons">
-            {[
+      <section className="stack" id="stack" style={{ paddingTop: "0" }}>
+        <div className="container" style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
+          <div style={{ display: "flex", flexDirection: "column", width: "100%", maxWidth: "520px" }}>
+            <h2 style={{ color: "var(--green-light)", fontSize: "1.2rem", fontWeight: "600", marginBottom: "16px", alignSelf: "flex-start" }}>
+              Skills
+            </h2>
+            <div className="stack__icons" style={{ margin: "0", padding: "0" }}>
+              {[
               { id: 'ubuntu', name: 'Ubuntu', className: 'icon-ubuntu' },
               { id: 'typescript', name: 'TypeScript', className: 'icon-typescript' },
               { id: 'python', name: 'Python', className: 'icon-python' },
               { id: 'postgresql', name: 'PostgreSQL', className: 'icon-postgresql' },
               { id: 'nodejs', name: 'Node.js', className: 'icon-nodejs' },
               { id: 'react', name: 'React', className: 'icon-react' },
-              { id: 'vite', name: 'Vite', className: 'icon-vite' },
               { id: 'nextjs', name: 'Next.js', className: 'icon-nextjs' },
             ].map(tech => (
               <div key={tech.id} className="stack-item">
@@ -150,6 +158,7 @@ function Body() {
                 <div className={`stack-icon ${tech.className}`}></div>
               </div>
             ))}
+            </div>
           </div>
         </div>
       </section>

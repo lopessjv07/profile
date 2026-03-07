@@ -332,11 +332,10 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-        gap: 16px;
+    gap: 16px;
         padding: 24px 0;
         align-items: center;
-        width: 95%;
-        margin: 0 auto;
+    width: 100%;
     }
     
     .stack-item {
@@ -351,13 +350,13 @@
     }
     
     .stack-icon {
-        width: 45px;
-        height: 45px;
+        width: 35px;
+            height: 35px;
         background-image: url('/stack.svg');
         background-size: 920.3125% 100%;
         background-repeat: no-repeat;
         display: block;
-        border-radius: 12px;
+        border-radius: 8px;
     }
     
     .icon-ubuntu {
@@ -382,10 +381,6 @@
 
 .icon-react {
     background-position: 71.4285% 0;
-}
-
-.icon-vite {
-    background-position: 85.7142% 0;
 }
 
 .icon-nextjs {
@@ -456,6 +451,11 @@
         font-size: 0.98rem;
     }
 
+                .stack-icon {
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 12px;
+                }
         .projects__grid {
         grid-template-columns: repeat(2, 1fr);
         }

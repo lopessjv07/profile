@@ -12,36 +12,42 @@ function Footer() {
   return (
     <footer className="footer" id="contato">
       <div className="footer__inner">
-        <h2 className="footer__title">{t("footer.title")}</h2>
-        <p className="footer__subtitle">
-          {t("footer.subtitle")}
-        </p>
-
-        <div className="footer__links">
-          <a
-            href="mailto:hi@lopessdev.net?subject=Contato via Portfólio"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faEnvelope} /> hi@lopessdev.net
-          </a>
-          <a
-            href="https://www.linkedin.com/in/jo%C3%A3o-vitor-lopes-467714312/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faLinkedin} /> LinkedIn
-          </a>
-          <a
-            href="https://github.com/lopessjv07"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FontAwesomeIcon icon={faGithub} /> GitHub
-          </a>
+        <div className="footer__cta-section">
+          <h2 className="footer__title">{t("footer.title")}</h2>
+          <p className="footer__subtitle">
+            {t("footer.subtitle")}
+          </p>
+          <div className="footer__actions">
+            <a href="mailto:hi@lopessdev.net?subject=Start a Project" className="btn btn--primary btn--large">
+              {t("footer.cta")} <FontAwesomeIcon icon={faEnvelope} />
+            </a>
+            <a href="#projetos" className="btn btn--outline btn--large">
+              {t("footer.secondary_cta")}
+            </a>
+          </div>
         </div>
 
-        <p className="footer__copy">© 2026 João Vitor Lopes</p>
+        <div className="footer__bottom">
+          <div className="footer__links">
+            <a
+              href="https://www.linkedin.com/in/jo%C3%A3o-vitor-lopes-467714312/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FontAwesomeIcon icon={faLinkedin} />
+            </a>
+            <a
+              href="https://github.com/lopessjv07"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <FontAwesomeIcon icon={faGithub} />
+            </a>
+          </div>
+          <p className="footer__copy">© {new Date().getFullYear()} João Vitor Lopes. All rights reserved.</p>
+        </div>
       </div>
     </footer>
   );

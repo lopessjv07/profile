@@ -21,6 +21,9 @@ function Header() {
           <a href="#sobre" className="header__link" suppressHydrationWarning>
             {t("nav.about")}
           </a>
+          <a href="#servicos" className="header__link" suppressHydrationWarning>
+            {t("nav.services")}
+          </a>
           <a href="#projetos" className="header__link" suppressHydrationWarning>
             {t("nav.projects")}
           </a>

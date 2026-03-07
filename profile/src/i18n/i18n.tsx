@@ -39,6 +39,7 @@ interface LanguageContextValue {
 const translations: Record<Lang, Translations> = {
   pt: {
     "nav.about": "Sobre",
+    "nav.services": "Serviços",
     "nav.projects": "Projetos",
     "nav.stack": "Stack",
     "nav.contact": "Contato",
@@ -49,10 +50,13 @@ const translations: Record<Lang, Translations> = {
     "hero.cta_work": "Ver meu trabalho",
     "hero.cta_about": "Sobre",
 
-    "about.title": "Sobre",
+    "about.title": "Sobre mim",
     "about.p1":
       "Sou o Lopes, um desenvolvedor focado em construir aplicações web rápidas e escaláveis usando tecnologias modernas.",
-
+    "about.p2":
+      "Trabalho com tecnologias web modernas para construir aplicações rápidas, escaláveis e confiáveis. Minha stack foca nos ecossistemas JavaScript e TypeScript, utilizando ferramentas como Next.js, React e Node.js, combinadas com bancos de dados como PostgreSQL.",
+    "about.p3":
+      "Meu objetivo é criar soluções bem arquitetadas que sejam performáticas, fáceis de manter e construídas para escalar.",
 
     "performance.title": "Por que meus sites performam melhor",
     "performance.subtitle": "Velocidade do site afeta diretamente as conversões.",
@@ -88,9 +92,10 @@ const translations: Record<Lang, Translations> = {
     "projects.highlights": "Destaques",
     "projects.viewProject": "Ver projeto",
 
-    "footer.title": "Pronto para escalar seu próximo projeto?",
-    "footer.subtitle":
-      "Seja para um SaaS de alta performance, uma solução de IA ou uma landing page focada em conversão — vamos construir juntos.",
+    "footer.title": "Let's build your next project?",
+    "footer.subtitle": "I build fast, scalable, and high-performance websites focused on real business results.",
+    "footer.cta": "Start a Project",
+    "footer.secondary_cta": "View My Work",
 
     projects: [
       {
@@ -149,6 +154,7 @@ const translations: Record<Lang, Translations> = {
 
   en: {
     "nav.about": "About",
+    "nav.services": "Services",
     "nav.projects": "Projects",
     "nav.stack": "Stack",
     "nav.contact": "Contact",
@@ -159,10 +165,13 @@ const translations: Record<Lang, Translations> = {
     "hero.cta_work": "View my work",
     "hero.cta_about": "About",
 
-    "about.title": "About",
+    "about.title": "About me",
     "about.p1":
       "I'm Lopes, a developer focused on building fast and scalable web applications using modern technologies.",
-
+    "about.p2":
+      "I work with modern web technologies to build fast, scalable and reliable applications. My stack focuses on JavaScript and TypeScript ecosystems, using tools like Next.js, React and Node.js, combined with databases such as PostgreSQL.",
+    "about.p3":
+      "My goal is to create well-engineered solutions that are performant, maintainable and built to scale.",
 
     "performance.title": "Why my websites perform better",
     "performance.subtitle": "Website speed directly affects conversions.",
@@ -198,9 +207,10 @@ const translations: Record<Lang, Translations> = {
     "projects.highlights": "Highlights",
     "projects.viewProject": "View project",
 
-    "footer.title": "Ready to scale your next project?",
-    "footer.subtitle":
-      "Whether you're looking for a high-performance SaaS, an AI-driven solution, or a conversion-focused landing page—let’s build it together.",
+    "footer.title": "Let's build your next project?",
+    "footer.subtitle": "I build fast, scalable, and high-performance websites focused on real business results.",
+    "footer.cta": "Start a Project",
+    "footer.secondary_cta": "View My Work",
 
     projects: [
       {
