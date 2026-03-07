@@ -13,24 +13,24 @@ function Header() {
   return (
     <header className="header">
       <div className="header__inner">
-        <a href="#" className="header__logo">
+        <a href="/" className="header__logo">
           <img src="/logo.png" alt="LopesDev" className="header__logo-img" />
         </a>
 
         <nav className="header__nav">
-          <a href="#sobre" className="header__link" suppressHydrationWarning>
+          <a href="/#sobre" className="header__link" suppressHydrationWarning>
             {t("nav.about")}
           </a>
-          <a href="#servicos" className="header__link" suppressHydrationWarning>
+          <a href="/services" className="header__link" suppressHydrationWarning>
             {t("nav.services")}
           </a>
-          <a href="#projetos" className="header__link" suppressHydrationWarning>
+          <a href="/#projetos" className="header__link" suppressHydrationWarning>
             {t("nav.projects")}
           </a>
-          <a href="#stack" className="header__link" suppressHydrationWarning>
+          <a href="/#stack" className="header__link" suppressHydrationWarning>
             {t("nav.stack")}
           </a>
-          <a href="#contato" className="header__link" suppressHydrationWarning>
+          <a href="/#contato" className="header__link" suppressHydrationWarning>
             {t("nav.contact")}
           </a>
         </nav>

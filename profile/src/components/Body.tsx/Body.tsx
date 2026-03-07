@@ -11,25 +11,12 @@ import { useLanguage } from "../../i18n/i18n";
 
 
 function Body() {
-  const glowRef = useRef<HTMLDivElement>(null);
   const { t, tProjects } = useLanguage();
 
   const projects = tProjects();
 
-  useEffect(() => {
-    const handleMouseMove = (e: MouseEvent) => {
-      if (glowRef.current) {
-        glowRef.current.style.setProperty('--glow-x', `${e.clientX}px`);
-        glowRef.current.style.setProperty('--glow-y', `${e.clientY + window.scrollY}px`);
-      }
-    };
-    window.addEventListener('mousemove', handleMouseMove);
-    return () => window.removeEventListener('mousemove', handleMouseMove);
-  }, []);
-
   return (
-    <main className="main-wrapper" ref={glowRef}>
-      <div className="mouse-glow" />
+    <main className="main-wrapper">
       {/* ──── Hero ──── */}
       <section className="hero" id="hero">
         <div className="container">

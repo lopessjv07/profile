@@ -1,0 +1,32 @@
+.mouse-glow-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.mouse-glow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.mouse-glow::after {
+  content: '';
+  position: absolute;
+  width: 2900px;
+  height: 2900px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(0, 255, 0, 0.07) 0%, rgba(145, 255, 0, 0.03) 40%, transparent 60%);
+  transform: translate(-50%, -50%);
+  left: var(--glow-x, -1000px);
+  top: var(--glow-y, -1000px);
+  transition: left 0.0s ease-out, top 0.0s ease-out;
+}

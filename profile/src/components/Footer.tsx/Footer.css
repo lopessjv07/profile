@@ -6,7 +6,7 @@
     padding: 80px 0 32px 0;
     border-top: 1px solid var(--border-subtle);
     text-align: center;
-    background: linear-gradient(180deg, rgba(36, 41, 56, 0) 0%, rgba(36, 41, 56, 0.4) 100%);
+    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
 }
 
 .footer__inner {

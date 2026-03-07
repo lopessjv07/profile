@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { LanguageProvider } from '../i18n/i18n'
 import '../index.css'
+import '../components/MouseGlow/MouseGlow.css'
 
 export const metadata: Metadata = {
   title: 'João Vitor Lopes — Dev & Founder',
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
     type: 'website',
   },
 }
+
+import MouseGlow from '../components/MouseGlow/MouseGlow'
 
 export default function RootLayout({
   children,
@@ -26,6 +29,7 @@ export default function RootLayout({
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
       </head>
       <body>
+        <MouseGlow />
         <LanguageProvider>
             {children}
         </LanguageProvider>

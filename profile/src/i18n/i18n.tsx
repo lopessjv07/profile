@@ -97,6 +97,58 @@ const translations: Record<Lang, Translations> = {
     "footer.cta": "Start a Project",
     "footer.secondary_cta": "View My Work",
 
+    "services.hero.title": "Websites e Aplicações Web Focados em Performance",
+    "services.hero.subtitle": "Construo sites rápidos, escaláveis e modernos para empresas e startups.",
+    "services.hero.cta": "Iniciar um Projeto",
+
+    "services.list.title": "Meus Serviços",
+    "services.list.landing": "Landing Pages",
+    "services.list.landing.desc": "Landing pages de alta performance otimizadas para converter visitantes em clientes.",
+    "services.list.landing.f1": "Carregamento ultrarrápido",
+    "services.list.landing.f2": "Estrutura otimizada para SEO",
+    "services.list.landing.f3": "Design mobile-first",
+    "services.list.landing.f4": "Layout focado em conversão",
+
+    "services.list.business": "Sites Corporativos",
+    "services.list.business.desc": "Sites profissionais para empresas que desejam uma forte presença online.",
+    "services.list.business.f1": "Design personalizado",
+    "services.list.business.f2": "Alta performance",
+    "services.list.business.f3": "Pronto para SEO",
+    "services.list.business.f4": "Arquitetura escalável",
+
+    "services.list.saas": "Desenvolvimento de SaaS",
+    "services.list.saas.desc": "Desenvolvimento de plataformas web escaláveis e produtos SaaS.",
+    "services.list.saas.f1": "Desenvolvimento full-stack",
+    "services.list.saas.f2": "Sistemas de autenticação",
+    "services.list.saas.f3": "Integração de banco de dados",
+    "services.list.saas.f4": "Arquitetura escalável",
+
+    "services.list.maintenance": "Manutenção de Sites",
+    "services.list.maintenance.desc": "Atualizações e suporte técnico para manter sites seguros e otimizados.",
+    "services.list.maintenance.f1": "Correção de bugs",
+    "services.list.maintenance.f2": "Melhorias de performance",
+    "services.list.maintenance.f3": "Atualizações contínuas",
+    "services.list.maintenance.f4": "Suporte técnico",
+
+    "services.recent.title": "Projetos Recentes",
+    "services.recent.carwash": "Site de Lava Rápido",
+    "services.recent.carwash.desc": "Site rápido e focado em conversão para um serviço premium de lavagem automotiva.",
+    "services.recent.hairsalon": "Site de Salão de Beleza",
+    "services.recent.hairsalon.desc": "Presença digital moderna e elegante para agendamentos em um salão de alto padrão.",
+    "services.recent.cleaning": "Site de Limpeza Corporativa",
+    "services.recent.cleaning.desc": "Plataforma projetada para maximizar SEO local e confiança em serviços de limpeza.",
+    "services.recent.cta": "Ver Projeto",
+
+    "services.why.title": "Por Que Trabalhar Comigo",
+    "services.why.f1": "Sites ultrarrápidos",
+    "services.why.f2": "Estrutura SEO-ready",
+    "services.why.f3": "Tecnologias modernas",
+    "services.why.f4": "Design mobile-first",
+
+    "services.cta.title": "Pronto para construir o seu site?",
+    "services.cta.subtitle": "Vamos trabalhar juntos para criar algo incrível que entregue resultados reais.",
+    "services.cta.btn": "Iniciar um Projeto",
+
     projects: [
       {
         id: "ordemo",
@@ -211,6 +263,58 @@ const translations: Record<Lang, Translations> = {
     "footer.subtitle": "I build fast, scalable, and high-performance websites focused on real business results.",
     "footer.cta": "Start a Project",
     "footer.secondary_cta": "View My Work",
+
+    "services.hero.title": "Websites and Web Applications Built for Performance",
+    "services.hero.subtitle": "I build fast, scalable, and modern websites for businesses and startups.",
+    "services.hero.cta": "Start a Project",
+
+    "services.list.title": "My Services",
+    "services.list.landing": "Landing Pages",
+    "services.list.landing.desc": "High-performance landing pages designed to convert visitors into customers.",
+    "services.list.landing.f1": "Fast loading performance",
+    "services.list.landing.f2": "SEO optimized structure",
+    "services.list.landing.f3": "Mobile-first design",
+    "services.list.landing.f4": "Conversion-focused layout",
+
+    "services.list.business": "Business Websites",
+    "services.list.business.desc": "Professional websites for companies that want a strong online presence.",
+    "services.list.business.f1": "Custom design",
+    "services.list.business.f2": "High performance",
+    "services.list.business.f3": "SEO-ready structure",
+    "services.list.business.f4": "Scalable architecture",
+
+    "services.list.saas": "SaaS Development",
+    "services.list.saas.desc": "Development of scalable web platforms and SaaS products.",
+    "services.list.saas.f1": "Full-stack development",
+    "services.list.saas.f2": "Authentication systems",
+    "services.list.saas.f3": "Database integration",
+    "services.list.saas.f4": "Scalable architecture",
+
+    "services.list.maintenance": "Website Maintenance",
+    "services.list.maintenance.desc": "Ongoing updates and technical support to keep websites secure and optimized.",
+    "services.list.maintenance.f1": "Bug fixes",
+    "services.list.maintenance.f2": "Performance improvements",
+    "services.list.maintenance.f3": "Updates and maintenance",
+    "services.list.maintenance.f4": "Technical support",
+
+    "services.recent.title": "Recent Projects",
+    "services.recent.carwash": "Car Wash Website",
+    "services.recent.carwash.desc": "A fast, conversion-driven website for a local premium car wash service.",
+    "services.recent.hairsalon": "Hair Salon Website",
+    "services.recent.hairsalon.desc": "Modern and elegant online booking presence for an upscale salon.",
+    "services.recent.cleaning": "Cleaning Business Website",
+    "services.recent.cleaning.desc": "Service inquiry platform designed to maximize local SEO and trust.",
+    "services.recent.cta": "View Project",
+
+    "services.why.title": "Why Work With Me",
+    "services.why.f1": "Ultra-fast websites",
+    "services.why.f2": "SEO-ready structure",
+    "services.why.f3": "Modern technologies",
+    "services.why.f4": "Mobile-first design",
+
+    "services.cta.title": "Ready to build your website?",
+    "services.cta.subtitle": "Let's work together to create something amazing that delivers real results.",
+    "services.cta.btn": "Start a Project",
 
     projects: [
       {
