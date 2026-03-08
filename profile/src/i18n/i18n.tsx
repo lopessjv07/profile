@@ -108,6 +108,7 @@ const translations: Record<Lang, Translations> = {
     "services.list.landing.f2": "Estrutura otimizada para SEO",
     "services.list.landing.f3": "Design mobile-first",
     "services.list.landing.f4": "Layout focado em conversão",
+    "services.list.landing.cta": "Iniciar um Projeto",
 
     "services.list.business": "Sites Corporativos",
     "services.list.business.desc": "Sites profissionais para empresas que desejam uma forte presença online.",
@@ -115,6 +116,7 @@ const translations: Record<Lang, Translations> = {
     "services.list.business.f2": "Alta performance",
     "services.list.business.f3": "Pronto para SEO",
     "services.list.business.f4": "Arquitetura escalável",
+    "services.list.business.cta": "Iniciar um Projeto",
 
     "services.list.saas": "Desenvolvimento de SaaS",
     "services.list.saas.desc": "Desenvolvimento de plataformas web escaláveis e produtos SaaS.",
@@ -122,6 +124,7 @@ const translations: Record<Lang, Translations> = {
     "services.list.saas.f2": "Sistemas de autenticação",
     "services.list.saas.f3": "Integração de banco de dados",
     "services.list.saas.f4": "Arquitetura escalável",
+    "services.list.saas.cta": "Iniciar um Projeto",
 
     "services.list.maintenance": "Manutenção de Sites",
     "services.list.maintenance.desc": "Atualizações e suporte técnico para manter sites seguros e otimizados.",
@@ -129,6 +132,7 @@ const translations: Record<Lang, Translations> = {
     "services.list.maintenance.f2": "Melhorias de performance",
     "services.list.maintenance.f3": "Atualizações contínuas",
     "services.list.maintenance.f4": "Suporte técnico",
+    "services.list.maintenance.cta": "Solicitar Manutenção",
 
     "services.recent.title": "Projetos Recentes",
     "services.recent.carwash": "Site de Lava Rápido",
@@ -264,24 +268,26 @@ const translations: Record<Lang, Translations> = {
     "footer.cta": "Start a Project",
     "footer.secondary_cta": "View My Work",
 
-    "services.hero.title": "Websites and Web Applications Built for Performance",
-    "services.hero.subtitle": "I build fast, scalable, and modern websites for businesses and startups.",
+    "services.hero.title": "High-performance websites built to bring more customers to your business",
+    "services.hero.subtitle": "Fast, modern and scalable websites designed to convert visitors into customers.",
     "services.hero.cta": "Start a Project",
 
     "services.list.title": "My Services",
     "services.list.landing": "Landing Pages",
     "services.list.landing.desc": "High-performance landing pages designed to convert visitors into customers.",
     "services.list.landing.f1": "Fast loading performance",
-    "services.list.landing.f2": "SEO optimized structure",
-    "services.list.landing.f3": "Mobile-first design",
-    "services.list.landing.f4": "Conversion-focused layout",
+    "services.list.landing.f2": "Conversion-focused layout",
+    "services.list.landing.f3": "SEO optimized structure",
+    "services.list.landing.f4": "Mobile-first design",
+    "services.list.landing.cta": "Start a Project",
 
     "services.list.business": "Business Websites",
     "services.list.business.desc": "Professional websites for companies that want a strong online presence.",
-    "services.list.business.f1": "Custom design",
-    "services.list.business.f2": "High performance",
+    "services.list.business.f1": "Custom modern design",
+    "services.list.business.f2": "High-performance architecture",
     "services.list.business.f3": "SEO-ready structure",
-    "services.list.business.f4": "Scalable architecture",
+    "services.list.business.f4": "Scalable codebase",
+    "services.list.business.cta": "Start a Project",
 
     "services.list.saas": "SaaS Development",
     "services.list.saas.desc": "Development of scalable web platforms and SaaS products.",
@@ -289,13 +295,15 @@ const translations: Record<Lang, Translations> = {
     "services.list.saas.f2": "Authentication systems",
     "services.list.saas.f3": "Database integration",
     "services.list.saas.f4": "Scalable architecture",
+    "services.list.saas.cta": "Start a Project",
 
     "services.list.maintenance": "Website Maintenance",
-    "services.list.maintenance.desc": "Ongoing updates and technical support to keep websites secure and optimized.",
+    "services.list.maintenance.desc": "Continuous improvements and technical support for your website.",
     "services.list.maintenance.f1": "Bug fixes",
-    "services.list.maintenance.f2": "Performance improvements",
-    "services.list.maintenance.f3": "Updates and maintenance",
+    "services.list.maintenance.f2": "Performance optimization",
+    "services.list.maintenance.f3": "Updates and improvements",
     "services.list.maintenance.f4": "Technical support",
+    "services.list.maintenance.cta": "Request Maintenance",
 
     "services.recent.title": "Recent Projects",
     "services.recent.carwash": "Car Wash Website",
@@ -309,11 +317,11 @@ const translations: Record<Lang, Translations> = {
     "services.why.title": "Why Work With Me",
     "services.why.f1": "Ultra-fast websites",
     "services.why.f2": "SEO-ready structure",
-    "services.why.f3": "Modern technologies",
-    "services.why.f4": "Mobile-first design",
+    "services.why.f3": "Mobile-first design",
+    "services.why.f4": "Modern scalable technologies",
 
     "services.cta.title": "Ready to build your website?",
-    "services.cta.subtitle": "Let's work together to create something amazing that delivers real results.",
+    "services.cta.subtitle": "Let's create a fast, modern and scalable website for your business.",
     "services.cta.btn": "Start a Project",
 
     projects: [

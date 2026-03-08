@@ -41,6 +41,11 @@ function Services() {
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.landing.f3")}</li>
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.landing.f4")}</li>
               </ul>
+              <div style={{ marginTop: "auto", paddingTop: "24px" }}>
+                <a href="/#contato" className="recent-card__link">
+                  {t("services.list.landing.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
+                </a>
+              </div>
             </div>
 
             {/* Business Websites */}
@@ -56,6 +61,11 @@ function Services() {
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.business.f3")}</li>
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.business.f4")}</li>
               </ul>
+              <div style={{ marginTop: "auto", paddingTop: "24px" }}>
+                <a href="/#contato" className="recent-card__link">
+                  {t("services.list.business.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
+                </a>
+              </div>
             </div>
 
             {/* SaaS Development */}
@@ -71,6 +81,11 @@ function Services() {
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.saas.f3")}</li>
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.saas.f4")}</li>
               </ul>
+              <div style={{ marginTop: "auto", paddingTop: "24px" }}>
+                <a href="/#contato" className="recent-card__link">
+                  {t("services.list.saas.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
+                </a>
+              </div>
             </div>
 
             {/* Maintenance */}
@@ -86,6 +101,11 @@ function Services() {
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.maintenance.f3")}</li>
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.maintenance.f4")}</li>
               </ul>
+              <div style={{ marginTop: "auto", paddingTop: "24px" }}>
+                <a href="/#contato" className="recent-card__link">
+                  {t("services.list.maintenance.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
+                </a>
+              </div>
             </div>
           </div>
         </div>
