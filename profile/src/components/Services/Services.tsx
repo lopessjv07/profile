@@ -21,6 +21,24 @@ function Services() {
         </div>
       </section>
 
+      {/* ──── Problems I Solve ──── */}
+      <section className="services-why" style={{ paddingTop: "0" }}>
+        <div className="container">
+          <h2 className="section__title" style={{ textAlign: "center", marginBottom: "40px" }}>
+            {t("services.problems.title") || "Problems I Help Businesses Solve"}
+          </h2>
+          <div className="why-grid" style={{ gridTemplateColumns: "1fr" }}>
+            <ul className="service-card__features" style={{ maxWidth: "600px", margin: "0 auto", gap: "16px" }}>
+               <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p1") || "Slow websites that drive visitors away"}</li>
+               <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p2") || "Outdated designs that hurt brand credibility"}</li>
+               <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p3") || "Landing pages that fail to convert traffic into sales"}</li>
+               <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p4") || "Websites that perform poorly on mobile devices"}</li>
+               <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p5") || "Poor SEO architecture preventing Google rankings"}</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
       {/* ──── Services Grid ──── */}
       <section className="services-list" id="services-list">
         <div className="container">
@@ -166,19 +184,49 @@ function Services() {
           <div className="why-grid">
             <div className="why-card">
               <FontAwesomeIcon icon={faBolt} className="why-icon" />
-              <h3>{t("services.why.f1")}</h3>
+              <h3 style={{ marginBottom: "8px" }}>{t("services.why.f1")}</h3>
+              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.why.f1.desc") || "Because faster sites rank better and sell more."}</p>
             </div>
             <div className="why-card">
               <FontAwesomeIcon icon={faCheck} className="why-icon" />
-              <h3>{t("services.why.f2")}</h3>
+              <h3 style={{ marginBottom: "8px" }}>{t("services.why.f2")}</h3>
+              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.why.f2.desc") || "To provide a seamless, premium experience for your users."}</p>
             </div>
             <div className="why-card">
               <FontAwesomeIcon icon={faCode} className="why-icon" />
-              <h3>{t("services.why.f3")}</h3>
+              <h3 style={{ marginBottom: "8px" }}>{t("services.why.f3")}</h3>
+              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.why.f3.desc") || "Clean, maintainable code that grows with your business."}</p>
             </div>
             <div className="why-card">
               <FontAwesomeIcon icon={faDesktop} className="why-icon" />
-              <h3>{t("services.why.f4")}</h3>
+              <h3 style={{ marginBottom: "8px" }}>{t("services.why.f4")}</h3>
+              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.why.f4.desc") || "Direct access to me so you always know your project's status."}</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ──── How the Process Works ──── */}
+      <section className="services-why" style={{ paddingTop: "0" }}>
+        <div className="container">
+          <h2 className="section__title" style={{ textAlign: "center", marginBottom: "40px" }}>
+            {t("services.process.title") || "How the Process Works"}
+          </h2>
+          <div className="why-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}>
+            <div className="why-card">
+              <div style={{ fontSize: "1.5rem", fontWeight: "800", color: "var(--green-brand)", marginBottom: "16px" }}>01</div>
+              <h3 style={{ marginBottom: "8px" }}>{t("services.process.p1.title") || "1. Project Discussion"}</h3>
+              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.process.p1.desc") || "Understanding your business goals, target audience, and requirements."}</p>
+            </div>
+            <div className="why-card">
+              <div style={{ fontSize: "1.5rem", fontWeight: "800", color: "var(--green-brand)", marginBottom: "16px" }}>02</div>
+              <h3 style={{ marginBottom: "8px" }}>{t("services.process.p2.title") || "2. Design & Development"}</h3>
+              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.process.p2.desc") || "Building a fast, modern, and highly scalable website."}</p>
+            </div>
+            <div className="why-card">
+               <div style={{ fontSize: "1.5rem", fontWeight: "800", color: "var(--green-brand)", marginBottom: "16px" }}>03</div>
+              <h3 style={{ marginBottom: "8px" }}>{t("services.process.p3.title") || "3. Launch & Optimization"}</h3>
+              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.process.p3.desc") || "Deploying the site to the world and ensuring peak performance."}</p>
             </div>
           </div>
         </div>
