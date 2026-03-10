@@ -232,16 +232,7 @@ function Services() {
         </div>
       </section>
 
-      {/* ──── Final CTA ──── */}
-      <section className="services-cta">
-        <div className="container" style={{ textAlign: "center" }}>
-          <h2 className="services-cta__title">{t("services.cta.title")}</h2>
-          <p className="services-cta__subtitle">{t("services.cta.subtitle")}</p>
-          <a href="/#contato" className="btn btn--primary btn--large">
-            {t("services.cta.btn")}
-          </a>
-        </div>
-      </section>
+
     </main>
   );
 }

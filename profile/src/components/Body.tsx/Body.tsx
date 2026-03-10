@@ -31,7 +31,7 @@ function Body() {
             {t("hero.techs")}
           </p>
           <div className="hero__actions">
-            <a href="#projetos" className="btn btn--primary">
+            <a href="/services" className="btn btn--primary">
               {t("hero.cta_work")} <FontAwesomeIcon icon={faArrowDown} />
             </a>
             <a

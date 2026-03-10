@@ -46,7 +46,7 @@ function Footer() {
               <FontAwesomeIcon icon={faGithub} />
             </a>
           </div>
-          <p className="footer__copy">© {new Date().getFullYear()} João Vitor Lopes. All rights reserved.</p>
+          <p className="footer__copy">© {new Date().getFullYear()} João Vitor Lopes. {t("footer.copy")}</p>
         </div>
       </div>
     </footer>

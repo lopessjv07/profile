@@ -30,7 +30,7 @@ function Header() {
           <a href="/#stack" className="header__link" suppressHydrationWarning>
             {t("nav.stack")}
           </a>
-          <a href="/#contato" className="header__link" suppressHydrationWarning>
+          <a href="/contact" className="header__link" suppressHydrationWarning>
             {t("nav.contact")}
           </a>
         </nav>
