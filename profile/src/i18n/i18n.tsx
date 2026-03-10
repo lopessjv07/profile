@@ -173,6 +173,7 @@ const translations: Record<Lang, Translations> = {
     "services.cta.subtitle": "Vamos trabalhar juntos para criar algo incrível que entregue resultados reais.",
     "services.cta.btn": "Iniciar um Projeto",
 
+    "contact.hero.available": "Disponível para novos projetos",
     "contact.hero.title": "Vamos Trabalhar Juntos",
     "contact.hero.subtitle": "Tem um projeto em mente? Adoraria saber mais sobre ele.",
     "contact.hero.desc": "Ajudo empresas a construir sites rápidos, escaláveis e de alta performance usando tecnologias modernas como Next.js, React e arquitetura web moderna.",
@@ -184,7 +185,7 @@ const translations: Record<Lang, Translations> = {
     "contact.methods.subtitle": "Escolha a opção que funciona melhor para você.",
     "contact.email.title": "Email",
     "contact.email.label": "Contato principal",
-    "contact.email.value": "hello@lopessdev.com",
+    "contact.email.value": "contact@lopessdev.com",
     "contact.email.desc": "Melhor opção para consultas de projetos e discussões de negócios.",
     "contact.email.btn": "Enviar Email",
     "contact.linkedin.title": "LinkedIn",
@@ -415,6 +416,7 @@ const translations: Record<Lang, Translations> = {
     "services.cta.subtitle": "Let's create a fast, modern, and effective website tailored to your business goals.",
     "services.cta.btn": "Start a Project",
 
+    "contact.hero.available": "Available for new projects",
     "contact.hero.title": "Let's Work Together",
     "contact.hero.subtitle": "Have a project in mind? I'd love to hear about it.",
     "contact.hero.desc": "I help businesses build fast, scalable and high-performance websites using modern technologies like Next.js, React and modern web architecture.",
@@ -426,7 +428,7 @@ const translations: Record<Lang, Translations> = {
     "contact.methods.subtitle": "Choose the option that works best for you.",
     "contact.email.title": "Email",
     "contact.email.label": "Primary contact method",
-    "contact.email.value": "hello@lopessdev.com",
+    "contact.email.value": "contact@lopessdev.com",
     "contact.email.desc": "Best option for project inquiries and business discussions.",
     "contact.email.btn": "Send Email",
     "contact.linkedin.title": "LinkedIn",

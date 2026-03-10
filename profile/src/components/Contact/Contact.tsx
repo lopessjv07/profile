@@ -15,6 +15,10 @@ function Contact() {
       <section className="contact-hero">
         <div className="container">
           <div className="contact-hero__content">
+            <span className="contact-hero__badge">
+              <span className="contact-hero__badge-dot" />
+              {t("contact.hero.available")}
+            </span>
             <h1 className="contact-hero__title">{t("contact.hero.title")}</h1>
             <p className="contact-hero__subtitle">{t("contact.hero.subtitle")}</p>
             <p className="contact-hero__desc">{t("contact.hero.desc")}</p>
@@ -26,7 +30,7 @@ function Contact() {
               <a href="#contact-form" className="btn btn--primary btn--large">
                 {t("contact.hero.cta")} <FontAwesomeIcon icon={faArrowRight} />
               </a>
-              <a href="mailto:hello@lopessdev.com?subject=Project Inquiry" className="btn btn--outline btn--large">
+              <a href="mailto:contact@lopessdev.com?subject=Project Inquiry" className="btn btn--outline btn--large">
                 {t("contact.hero.cta2")} <FontAwesomeIcon icon={faEnvelope} />
               </a>
             </div>
@@ -53,7 +57,7 @@ function Contact() {
               <h3 className="contact-card__title">{t("contact.email.title")}</h3>
               <span className="contact-card__value">{t("contact.email.value")}</span>
               <p className="contact-card__desc">{t("contact.email.desc")}</p>
-              <a href="mailto:hello@lopessdev.com?subject=Project Inquiry" className="contact-card__btn">
+              <a href="mailto:contact@lopessdev.com?subject=Project Inquiry" className="contact-card__btn">
                 {t("contact.email.btn")} <FontAwesomeIcon icon={faArrowRight} />
               </a>
             </div>
@@ -108,7 +112,7 @@ function Contact() {
               const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
               const subject = encodeURIComponent(`Project Inquiry: ${type}`);
               const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nProject Type: ${type}\nBudget Range: ${budget || "Not specified"}\n\n${message}`);
-              window.location.href = `mailto:hello@lopessdev.com?subject=${subject}&body=${body}`;
+              window.location.href = `mailto:contact@lopessdev.com?subject=${subject}&body=${body}`;
             }}
           >
             <div className="contact-form__row">
@@ -174,21 +178,6 @@ function Contact() {
         </div>
       </section>
 
-      {/* ──── Final CTA ──── */}
-      <section className="contact-cta">
-        <div className="container">
-          <h2 className="contact-cta__title">{t("contact.cta.title")}</h2>
-          <p className="contact-cta__subtitle">{t("contact.cta.subtitle")}</p>
-          <div className="contact-cta__actions">
-            <a href="mailto:hello@lopessdev.com?subject=Project Inquiry" className="btn btn--primary btn--large">
-              {t("contact.cta.btn")} <FontAwesomeIcon icon={faEnvelope} />
-            </a>
-            <a href="/#projetos" className="btn btn--outline btn--large">
-              {t("contact.cta.btn2")}
-            </a>
-          </div>
-        </div>
-      </section>
     </main>
   );
 }
