@@ -18,7 +18,7 @@ function Footer() {
             {t("footer.subtitle")}
           </p>
           <div className="footer__actions">
-            <a href="mailto:hi@lopessdev.net?subject=Start a Project" className="btn btn--primary btn--large">
+            <a href="mailto:contact@lopessdev.com?subject=Start a Project" className="btn btn--primary btn--large">
               {t("footer.cta")} <FontAwesomeIcon icon={faEnvelope} />
             </a>
             <a href="#projetos" className="btn btn--outline btn--large">
