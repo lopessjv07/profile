@@ -21,7 +21,7 @@ function Footer() {
             <a href="mailto:contact@lopessdev.com?subject=Start a Project" className="btn btn--primary btn--large">
               {t("footer.cta")} <FontAwesomeIcon icon={faEnvelope} />
             </a>
-            <a href="#projetos" className="btn btn--outline btn--large">
+            <a href="/services" className="btn btn--outline btn--large">
               {t("footer.secondary_cta")}
             </a>
           </div>

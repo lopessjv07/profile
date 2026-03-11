@@ -27,7 +27,7 @@ function Contact() {
               {t("contact.hero.trust")}
             </p>
             <div className="contact-hero__actions">
-              <a href="#contact-form" className="btn btn--primary btn--large">
+              <a href="mailto:contact@lopessdev.com?subject=Project Inquiry" className="btn btn--primary btn--large">
                 {t("contact.hero.cta")} <FontAwesomeIcon icon={faArrowRight} />
               </a>
               <a href="mailto:contact@lopessdev.com?subject=Project Inquiry" className="btn btn--outline btn--large">
@@ -85,7 +85,7 @@ function Contact() {
               </div>
               <h3 className="contact-card__title">{t("contact.whatsapp.title")}</h3>
               <p className="contact-card__desc">{t("contact.whatsapp.desc")}</p>
-              <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="contact-card__btn">
+              <a href="https://wa.me/5547992008256" target="_blank" rel="noopener noreferrer" className="contact-card__btn">
                 {t("contact.whatsapp.btn")} <FontAwesomeIcon icon={faArrowRight} />
               </a>
             </div>
@@ -93,74 +93,6 @@ function Contact() {
         </div>
       </section>
 
-      {/* ──── Project Inquiry Form ──── */}
-      <section className="contact-form-section" id="contact-form">
-        <div className="container">
-          <h2 className="section__title" style={{ textAlign: "center" }}>
-            {t("contact.form.title")}
-          </h2>
-          <p className="contact-form-section__subtitle">{t("contact.form.subtitle")}</p>
-          <form
-            className="contact-form"
-            onSubmit={(e) => {
-              e.preventDefault();
-              const form = e.target as HTMLFormElement;
-              const name = (form.elements.namedItem("name") as HTMLInputElement).value;
-              const email = (form.elements.namedItem("email") as HTMLInputElement).value;
-              const type = (form.elements.namedItem("type") as HTMLSelectElement).value;
-              const budget = (form.elements.namedItem("budget") as HTMLSelectElement).value;
-              const message = (form.elements.namedItem("message") as HTMLTextAreaElement).value;
-              const subject = encodeURIComponent(`Project Inquiry: ${type}`);
-              const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nProject Type: ${type}\nBudget Range: ${budget || "Not specified"}\n\n${message}`);
-              window.location.href = `mailto:contact@lopessdev.com?subject=${subject}&body=${body}`;
-            }}
-          >
-            <div className="contact-form__row">
-              <div className="contact-form__group">
-                <label className="contact-form__label" htmlFor="contact-name">{t("contact.form.name")}</label>
-                <input className="contact-form__input" type="text" id="contact-name" name="name" required />
-              </div>
-              <div className="contact-form__group">
-                <label className="contact-form__label" htmlFor="contact-email">{t("contact.form.email")}</label>
-                <input className="contact-form__input" type="email" id="contact-email" name="email" required />
-              </div>
-            </div>
-
-            <div className="contact-form__row">
-              <div className="contact-form__group">
-                <label className="contact-form__label" htmlFor="contact-type">{t("contact.form.type")}</label>
-                <select className="contact-form__select" id="contact-type" name="type" required defaultValue="">
-                  <option value="" disabled>{t("contact.form.type")}</option>
-                  <option value="Landing Page">{t("contact.form.type.landing")}</option>
-                  <option value="Business Website">{t("contact.form.type.business")}</option>
-                  <option value="Web Application">{t("contact.form.type.webapp")}</option>
-                  <option value="Website Redesign">{t("contact.form.type.redesign")}</option>
-                  <option value="Other">{t("contact.form.type.other")}</option>
-                </select>
-              </div>
-              <div className="contact-form__group">
-                <label className="contact-form__label" htmlFor="contact-budget">{t("contact.form.budget")}</label>
-                <select className="contact-form__select" id="contact-budget" name="budget" defaultValue="">
-                  <option value="">{t("contact.form.budget")}</option>
-                  <option value="$500-$1000">{t("contact.form.budget.1")}</option>
-                  <option value="$1000-$3000">{t("contact.form.budget.2")}</option>
-                  <option value="$3000+">{t("contact.form.budget.3")}</option>
-                </select>
-              </div>
-            </div>
-
-            <div className="contact-form__group">
-              <label className="contact-form__label" htmlFor="contact-message">{t("contact.form.message")}</label>
-              <textarea className="contact-form__textarea" id="contact-message" name="message" required></textarea>
-            </div>
-
-            <button type="submit" className="btn btn--primary btn--large contact-form__submit">
-              {t("contact.form.submit")} <FontAwesomeIcon icon={faArrowRight} />
-            </button>
-            <p className="contact-form__note">{t("contact.form.note")}</p>
-          </form>
-        </div>
-      </section>
 
       {/* ──── Trust Section ──── */}
       <section className="contact-trust">
