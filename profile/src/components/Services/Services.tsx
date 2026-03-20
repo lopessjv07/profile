@@ -137,16 +137,20 @@ function Services() {
           </h2>
           <div className="recent-grid">
             {/* Project 1 */}
+            <a href="https://lavacarjlle.vercel.app/en" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="recent-card">
-              <div className="recent-card__image-placeholder"></div>
+              <div className="recent-card__image-placeholder">
+                <img src="/carwash-preview.png" alt="Car Wash Website Preview" />
+              </div>
               <div className="recent-card__content">
                 <h3 className="recent-card__title">{t("services.recent.carwash")}</h3>
                 <p className="recent-card__desc">{t("services.recent.carwash.desc")}</p>
-                <a href="/#projetos" className="recent-card__link">
+                <span className="recent-card__link">
                   {t("services.recent.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
-                </a>
+                </span>
               </div>
             </div>
+            </a>
 
             {/* Project 2 */}
             <div className="recent-card">
