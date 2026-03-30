@@ -153,7 +153,7 @@ function Services() {
             </a>
 
             {/* Project 2 – Auto Repair */}
-            <a href="https://www.lopesautorepair.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+            <a href="https://lopesautorepair.com/en" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="recent-card">
               <div className="recent-card__image-placeholder">
                 <img src="/autorepair-preview.png" alt="Auto Repair Website Preview" />
