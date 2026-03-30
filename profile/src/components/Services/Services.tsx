@@ -152,29 +152,23 @@ function Services() {
             </div>
             </a>
 
-            {/* Project 2 */}
+            {/* Project 2 – Auto Repair */}
+            <a href="https://www.lopesautorepair.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="recent-card">
-              <div className="recent-card__image-placeholder"></div>
+              <div className="recent-card__image-placeholder">
+                <img src="/autorepair-preview.png" alt="Auto Repair Website Preview" />
+              </div>
               <div className="recent-card__content">
-                <h3 className="recent-card__title">{t("services.recent.hairsalon")}</h3>
-                <p className="recent-card__desc">{t("services.recent.hairsalon.desc")}</p>
-                <a href="/#projetos" className="recent-card__link">
+                <h3 className="recent-card__title">{t("services.recent.autorepair")}</h3>
+                <p className="recent-card__desc">{t("services.recent.autorepair.desc")}</p>
+                <span className="recent-card__link">
                   {t("services.recent.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
-                </a>
+                </span>
               </div>
             </div>
+            </a>
 
-            {/* Project 3 */}
-            <div className="recent-card">
-              <div className="recent-card__image-placeholder"></div>
-              <div className="recent-card__content">
-                <h3 className="recent-card__title">{t("services.recent.cleaning")}</h3>
-                <p className="recent-card__desc">{t("services.recent.cleaning.desc")}</p>
-                <a href="/#projetos" className="recent-card__link">
-                  {t("services.recent.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
-                </a>
-              </div>
-            </div>
+
           </div>
         </div>
       </section>

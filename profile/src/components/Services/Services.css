@@ -128,6 +128,14 @@
     gap: 24px;
     grid-template-columns: 1fr;
     margin-top: 40px;
+    align-items: stretch;
+    justify-content: center;
+}
+
+.recent-grid > a,
+.recent-grid > div {
+    display: flex;
+    flex-direction: column;
 }
 
 .recent-card {
@@ -136,6 +144,9 @@
     border-radius: 16px;
     overflow: hidden;
     transition: all var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
 .recent-card:hover {
@@ -162,6 +173,13 @@
 
 .recent-card__content {
     padding: 24px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.recent-card__content .recent-card__link {
+    margin-top: auto;
 }
 
 .recent-card__title {
@@ -293,6 +311,8 @@
     }
 
     .recent-grid {
-        grid-template-columns: repeat(3, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 800px;
+        margin-inline: auto;
     }
 }

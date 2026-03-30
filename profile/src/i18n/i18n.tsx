@@ -157,6 +157,8 @@ const translations: Record<Lang, Translations> = {
     "services.recent.hairsalon.desc": "Presença digital moderna e elegante para agendamentos em um salão de alto padrão.",
     "services.recent.cleaning": "Site de Limpeza Corporativa",
     "services.recent.cleaning.desc": "Plataforma projetada para maximizar SEO local e confiança em serviços de limpeza.",
+    "services.recent.autorepair": "Site de Oficina Mecânica",
+    "services.recent.autorepair.desc": "Site profissional para uma oficina mecânica, focado em atrair clientes locais e transmitir confiança.",
     "services.recent.cta": "Ver Projeto",
 
     "services.why.title": "Por Que Trabalhar Comigo",
@@ -400,6 +402,8 @@ const translations: Record<Lang, Translations> = {
     "services.recent.hairsalon.desc": "Modern and elegant online booking presence for an upscale salon.",
     "services.recent.cleaning": "Cleaning Business Website",
     "services.recent.cleaning.desc": "Service inquiry platform designed to maximize local SEO and trust.",
+    "services.recent.autorepair": "Auto Repair Website",
+    "services.recent.autorepair.desc": "Professional website for an auto repair shop, focused on attracting local customers and building trust.",
     "services.recent.cta": "View Project",
 
     "services.why.title": "Why Work With Me",
