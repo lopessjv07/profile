@@ -1,6 +1,6 @@
 import "./Services.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCheck, faBolt, faCode, faDesktop, faArrowRight } from "@fortawesome/free-solid-svg-icons";
+import { faCheck, faBolt, faCode, faDesktop, faArrowRight, faShieldHalved, faClock } from "@fortawesome/free-solid-svg-icons";
 import { useLanguage } from "../../i18n/i18n";
 
 function Services() {
@@ -230,6 +230,33 @@ function Services() {
         </div>
       </section>
 
+      {/* ──── Agency Partner CTA ──── */}
+      <section className="services-agency">
+        <div className="container">
+          <div className="agency-card">
+            <span className="agency-card__badge">{t("services.agency.badge")}</span>
+            <h2 className="agency-card__title">{t("services.agency.title")}</h2>
+            <p className="agency-card__text">{t("services.agency.desc")}</p>
+            <div className="agency-card__highlights">
+              <div className="agency-highlight">
+                <FontAwesomeIcon icon={faShieldHalved} className="agency-highlight__icon" />
+                <span>{t("services.agency.h1")}</span>
+              </div>
+              <div className="agency-highlight">
+                <FontAwesomeIcon icon={faClock} className="agency-highlight__icon" />
+                <span>{t("services.agency.h2")}</span>
+              </div>
+              <div className="agency-highlight">
+                <FontAwesomeIcon icon={faBolt} className="agency-highlight__icon" />
+                <span>{t("services.agency.h3")}</span>
+              </div>
+            </div>
+            <a href="/#contato" className="btn btn--primary btn--large agency-card__cta">
+              {t("services.agency.cta")} <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: "8px" }} />
+            </a>
+          </div>
+        </div>
+      </section>
 
     </main>
   );

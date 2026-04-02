@@ -109,6 +109,14 @@ const translations: Record<Lang, Translations> = {
     "services.problems.p4": "Sites com desempenho ruim em dispositivos móveis",
     "services.problems.p5": "Arquitetura de SEO ruim que impede o ranqueamento no Google",
 
+    "services.agency.badge": "Parcerias com Agências",
+    "services.agency.title": "Escalando uma Agência de Marketing?",
+    "services.agency.desc": "Além de entregar soluções diretas para empresas, eu também atuo como braço tecnológico de alta performance para agências. Ofereço desenvolvimento 100% white-label, compatível com NDA, com foco em pontuação 100% no GTmetrix.",
+    "services.agency.h1": "White-Label & Sem Risco de Captação",
+    "services.agency.h2": "Construído enquanto você dorme (Fuso AU/BR)",
+    "services.agency.h3": "100% de Performance no GTmetrix",
+    "services.agency.cta": "Vamos Ser Parceiros",
+
     "services.list.title": "Meus Serviços",
     "services.list.landing": "Landing Pages",
     "services.list.landing.desc": "Landing pages de alta performance otimizadas para converter visitantes em clientes.",
@@ -353,6 +361,14 @@ const translations: Record<Lang, Translations> = {
     "services.problems.p3": "Landing pages that fail to convert traffic into sales",
     "services.problems.p4": "Websites that perform poorly on mobile devices",
     "services.problems.p5": "Poor SEO architecture preventing Google rankings",
+
+    "services.agency.badge": "Agency Partnerships",
+    "services.agency.title": "Scaling a Marketing Agency?",
+    "services.agency.desc": "While I deliver direct solutions for businesses, I also act as a high-performance tech arm for agencies. I provide 100% white-label, NDA-friendly development with a focus on 100% GTmetrix scores.",
+    "services.agency.h1": "White-Label & Poaching-Free",
+    "services.agency.h2": "Built while you sleep (AU/BR Timezone)",
+    "services.agency.h3": "100% GTmetrix Performance",
+    "services.agency.cta": "Let's Partner Up",
 
     "services.list.title": "My Services",
     "services.list.landing": "Landing Pages",

@@ -6,7 +6,9 @@
     padding: 80px 0 32px 0;
     border-top: 1px solid var(--border-subtle);
     text-align: center;
-    background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+    background: #0d0d0d;
+    position: relative;
+    z-index: 2;
 }
 
 .footer__inner {
