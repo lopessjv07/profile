@@ -14,7 +14,7 @@ function Services() {
           <div className="services-hero__content">
             <h1 className="services-hero__title">{t("services.hero.title")}</h1>
             <p className="services-hero__subtitle">{t("services.hero.subtitle")}</p>
-            <a href="/#contato" className="btn btn--primary btn--large services-hero__btn">
+            <a href="/contact" className="btn btn--primary btn--large services-hero__btn">
               {t("services.hero.cta")}
             </a>
           </div>
@@ -60,7 +60,7 @@ function Services() {
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.landing.f4")}</li>
               </ul>
               <div style={{ marginTop: "auto", paddingTop: "24px" }}>
-                <a href="/#contato" className="recent-card__link">
+                <a href="/contact" className="recent-card__link">
                   {t("services.list.landing.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
                 </a>
               </div>
@@ -80,7 +80,7 @@ function Services() {
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.business.f4")}</li>
               </ul>
               <div style={{ marginTop: "auto", paddingTop: "24px" }}>
-                <a href="/#contato" className="recent-card__link">
+                <a href="/contact" className="recent-card__link">
                   {t("services.list.business.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
                 </a>
               </div>
@@ -100,7 +100,7 @@ function Services() {
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.saas.f4")}</li>
               </ul>
               <div style={{ marginTop: "auto", paddingTop: "24px" }}>
-                <a href="/#contato" className="recent-card__link">
+                <a href="/contact" className="recent-card__link">
                   {t("services.list.saas.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
                 </a>
               </div>
@@ -120,7 +120,7 @@ function Services() {
                 <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.maintenance.f4")}</li>
               </ul>
               <div style={{ marginTop: "auto", paddingTop: "24px" }}>
-                <a href="/#contato" className="recent-card__link">
+                <a href="/contact" className="recent-card__link">
                   {t("services.list.maintenance.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
                 </a>
               </div>
@@ -251,7 +251,7 @@ function Services() {
                 <span>{t("services.agency.h3")}</span>
               </div>
             </div>
-            <a href="/#contato" className="btn btn--primary btn--large agency-card__cta">
+            <a href="/contact" className="btn btn--primary btn--large agency-card__cta">
               {t("services.agency.cta")} <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: "8px" }} />
             </a>
           </div>
