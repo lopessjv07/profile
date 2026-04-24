@@ -12,9 +12,12 @@ function Contact() {
   return (
     <main className="contact-page">
       {/* ──── Hero Section ──── */}
+      <br />
+      <br />
       <section className="contact-hero">
         <div className="container">
           <div className="contact-hero__content">
+            <br /><br />
             <span className="contact-hero__badge">
               <span className="contact-hero__badge-dot" />
               {t("contact.hero.available")}

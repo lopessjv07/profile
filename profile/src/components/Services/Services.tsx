@@ -32,8 +32,6 @@ function Services() {
                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p1") || "Slow websites that drive visitors away"}</li>
                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p2") || "Outdated designs that hurt brand credibility"}</li>
                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p3") || "Landing pages that fail to convert traffic into sales"}</li>
-               <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p4") || "Websites that perform poorly on mobile devices"}</li>
-               <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p5") || "Poor SEO architecture preventing Google rankings"}</li>
             </ul>
           </div>
         </div>
@@ -53,12 +51,6 @@ function Services() {
               </div>
               <h3 className="service-card__title">{t("services.list.landing")}</h3>
               <p className="service-card__desc">{t("services.list.landing.desc")}</p>
-              <ul className="service-card__features">
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.landing.f1")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.landing.f2")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.landing.f3")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.landing.f4")}</li>
-              </ul>
               <div style={{ marginTop: "auto", paddingTop: "24px" }}>
                 <a href="/contact" className="recent-card__link">
                   {t("services.list.landing.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
@@ -73,35 +65,9 @@ function Services() {
               </div>
               <h3 className="service-card__title">{t("services.list.business")}</h3>
               <p className="service-card__desc">{t("services.list.business.desc")}</p>
-              <ul className="service-card__features">
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.business.f1")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.business.f2")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.business.f3")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.business.f4")}</li>
-              </ul>
               <div style={{ marginTop: "auto", paddingTop: "24px" }}>
                 <a href="/contact" className="recent-card__link">
                   {t("services.list.business.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
-                </a>
-              </div>
-            </div>
-
-            {/* SaaS Development */}
-            <div className="service-card">
-              <div className="service-card__icon">
-                <FontAwesomeIcon icon={faBolt} />
-              </div>
-              <h3 className="service-card__title">{t("services.list.saas")}</h3>
-              <p className="service-card__desc">{t("services.list.saas.desc")}</p>
-              <ul className="service-card__features">
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.saas.f1")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.saas.f2")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.saas.f3")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.saas.f4")}</li>
-              </ul>
-              <div style={{ marginTop: "auto", paddingTop: "24px" }}>
-                <a href="/contact" className="recent-card__link">
-                  {t("services.list.saas.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
                 </a>
               </div>
             </div>
@@ -113,12 +79,6 @@ function Services() {
               </div>
               <h3 className="service-card__title">{t("services.list.maintenance")}</h3>
               <p className="service-card__desc">{t("services.list.maintenance.desc")}</p>
-              <ul className="service-card__features">
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.maintenance.f1")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.maintenance.f2")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.maintenance.f3")}</li>
-                <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.list.maintenance.f4")}</li>
-              </ul>
               <div style={{ marginTop: "auto", paddingTop: "24px" }}>
                 <a href="/contact" className="recent-card__link">
                   {t("services.list.maintenance.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
@@ -168,64 +128,22 @@ function Services() {
             </div>
             </a>
 
+            {/* Project 3 – Divina Luz */}
+            <a href="https://ld.divinaluz.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+            <div className="recent-card">
+              <div className="recent-card__image-placeholder">
+                <img src="/divinaluz-preview.png" alt="Divina Luz Preview" />
+              </div>
+              <div className="recent-card__content">
+                <h3 className="recent-card__title">{t("services.recent.divinaluz")}</h3>
+                <p className="recent-card__desc">{t("services.recent.divinaluz.desc")}</p>
+                <span className="recent-card__link">
+                  {t("services.recent.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
+                </span>
+              </div>
+            </div>
+            </a>
 
-          </div>
-        </div>
-      </section>
-
-      {/* ──── Why Work With Me ──── */}
-      <section className="services-why">
-        <div className="container">
-          <h2 className="section__title" style={{ textAlign: "center", marginBottom: "40px" }}>
-            {t("services.why.title")}
-          </h2>
-          <div className="why-grid">
-            <div className="why-card">
-              <FontAwesomeIcon icon={faBolt} className="why-icon" />
-              <h3 style={{ marginBottom: "8px" }}>{t("services.why.f1")}</h3>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.why.f1.desc") || "Because faster sites rank better and sell more."}</p>
-            </div>
-            <div className="why-card">
-              <FontAwesomeIcon icon={faCheck} className="why-icon" />
-              <h3 style={{ marginBottom: "8px" }}>{t("services.why.f2")}</h3>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.why.f2.desc") || "To provide a seamless, premium experience for your users."}</p>
-            </div>
-            <div className="why-card">
-              <FontAwesomeIcon icon={faCode} className="why-icon" />
-              <h3 style={{ marginBottom: "8px" }}>{t("services.why.f3")}</h3>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.why.f3.desc") || "Clean, maintainable code that grows with your business."}</p>
-            </div>
-            <div className="why-card">
-              <FontAwesomeIcon icon={faDesktop} className="why-icon" />
-              <h3 style={{ marginBottom: "8px" }}>{t("services.why.f4")}</h3>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.why.f4.desc") || "Direct access to me so you always know your project's status."}</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* ──── How the Process Works ──── */}
-      <section className="services-why" style={{ paddingTop: "0" }}>
-        <div className="container">
-          <h2 className="section__title" style={{ textAlign: "center", marginBottom: "40px" }}>
-            {t("services.process.title") || "How the Process Works"}
-          </h2>
-          <div className="why-grid" style={{ gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))" }}>
-            <div className="why-card">
-              <div style={{ fontSize: "1.5rem", fontWeight: "800", color: "var(--green-brand)", marginBottom: "16px" }}>01</div>
-              <h3 style={{ marginBottom: "8px" }}>{t("services.process.p1.title") || "1. Project Discussion"}</h3>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.process.p1.desc") || "Understanding your business goals, target audience, and requirements."}</p>
-            </div>
-            <div className="why-card">
-              <div style={{ fontSize: "1.5rem", fontWeight: "800", color: "var(--green-brand)", marginBottom: "16px" }}>02</div>
-              <h3 style={{ marginBottom: "8px" }}>{t("services.process.p2.title") || "2. Design & Development"}</h3>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.process.p2.desc") || "Building a fast, modern, and highly scalable website."}</p>
-            </div>
-            <div className="why-card">
-               <div style={{ fontSize: "1.5rem", fontWeight: "800", color: "var(--green-brand)", marginBottom: "16px" }}>03</div>
-              <h3 style={{ marginBottom: "8px" }}>{t("services.process.p3.title") || "3. Launch & Optimization"}</h3>
-              <p style={{ fontSize: "0.9rem", color: "var(--text-secondary)", lineHeight: "1.5" }}>{t("services.process.p3.desc") || "Deploying the site to the world and ensuring peak performance."}</p>
-            </div>
           </div>
         </div>
       </section>
@@ -254,6 +172,19 @@ function Services() {
             <a href="/contact" className="btn btn--primary btn--large agency-card__cta">
               {t("services.agency.cta")} <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: "8px" }} />
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ──── Final Benefits / Trust ──── */}
+      <section className="services-benefits" style={{ paddingBottom: "80px", paddingTop: "0" }}>
+        <div className="container" style={{ textAlign: "center" }}>
+          <div style={{ display: "inline-flex", flexWrap: "wrap", justifyContent: "center", gap: "24px", padding: "32px", background: "var(--surface-color)", borderRadius: "var(--border-radius-large)", border: "1px solid var(--border-color)", fontSize: "1.1rem", fontWeight: "600" }}>
+            <span><FontAwesomeIcon icon={faBolt} style={{ color: "var(--green-brand)", marginRight: "8px" }}/>Entrega em até 5 dias</span>
+            <span style={{ color: "var(--border-color)" }}>•</span>
+            <span><FontAwesomeIcon icon={faCheck} style={{ color: "var(--green-brand)", marginRight: "8px" }}/>Foco em conversão (não só layout)</span>
+            <span style={{ color: "var(--border-color)" }}>•</span>
+            <span><FontAwesomeIcon icon={faClock} style={{ color: "var(--green-brand)", marginRight: "8px" }}/>Comunicação direta, sem enrolação</span>
           </div>
         </div>
       </section>
