@@ -3,6 +3,7 @@
 import { useState } from "react";
 import styles from "./plans.module.css";
 import Header from "../../components/Header/Header";
+import Footer from "../../components/Footer.tsx/Footer";
 
 export default function LPLensPage() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -152,20 +153,7 @@ export default function LPLensPage() {
         </div>
       </section>
 
-      {/* Footer Section */}
-      <footer className={styles.footer}>
-        <div className={styles.wrapper}>
-          <div className={styles.footerLinks}>
-            <a href="/proposta-comercial.pdf" download className={styles.footerLink}>
-              📄 Baixar Proposta Comercial Completa (PDF)
-            </a>
-            <a href="/termos-de-adesao.pdf" download className={styles.footerLink}>
-              📄 Baixar Termo de Adesão e Regras de Negócio (PDF)
-            </a>
-          </div>
-          <p className={styles.footerCopy}>© {new Date().getFullYear()} - Infraestrutura de Elite. Todos os direitos reservados.</p>
-        </div>
-      </footer>
+      <Footer />
     </div>
   );
 }
