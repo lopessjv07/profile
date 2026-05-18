@@ -78,7 +78,7 @@ export default function LPLensPage() {
               
               <div className={styles.planAction}>
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className={styles.planBtn}>
-                  Contratar Infraestrutura
+                  Quero saber mais
                 </a>
                 <p className={styles.planFidelity}>
                   <a href="/termos-de-adesao.pdf" target="_blank" rel="noopener noreferrer">Ver termos de adesão</a>
@@ -103,7 +103,7 @@ export default function LPLensPage() {
               
               <div className={styles.planAction}>
                 <a href={whatsappLink} target="_blank" rel="noopener noreferrer" className={styles.planBtn}>
-                  Contratar Infraestrutura
+                  Quero saber mais
                 </a>
                 <p className={styles.planFidelity}>
                   <a href="/termos-de-adesao.pdf" target="_blank" rel="noopener noreferrer">Ver termos de adesão</a>
