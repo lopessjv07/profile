@@ -14,25 +14,6 @@ function Services() {
           <div className="services-hero__content">
             <h1 className="services-hero__title">{t("services.hero.title")}</h1>
             <p className="services-hero__subtitle">{t("services.hero.subtitle")}</p>
-            <a href="/contact" className="btn btn--primary btn--large services-hero__btn">
-              {t("services.hero.cta")}
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* ──── Problems I Solve ──── */}
-      <section className="services-why" style={{ paddingTop: "0" }}>
-        <div className="container">
-          <h2 className="section__title" style={{ textAlign: "center", marginBottom: "40px" }}>
-            {t("services.problems.title") || "Problems I Help Businesses Solve"}
-          </h2>
-          <div className="why-grid" style={{ gridTemplateColumns: "1fr" }}>
-            <ul className="service-card__features" style={{ maxWidth: "600px", margin: "0 auto", gap: "16px" }}>
-               <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p1") || "Slow websites that drive visitors away"}</li>
-               <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p2") || "Outdated designs that hurt brand credibility"}</li>
-               <li><FontAwesomeIcon icon={faCheck} className="check-icon" /> {t("services.problems.p3") || "Landing pages that fail to convert traffic into sales"}</li>
-            </ul>
           </div>
         </div>
       </section>

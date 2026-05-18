@@ -1,0 +1,352 @@
+.container {
+  min-height: 100vh;
+  background-color: #0d0d0d;
+  color: #ffffff;
+  font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+/* Utils */
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.textHighlight {
+  color: #00ff88;
+}
+
+/* Hero Section */
+.hero {
+  padding: 120px 0 80px;
+  text-align: center;
+  background: radial-gradient(circle at center top, rgba(0, 255, 136, 0.05) 0%, transparent 60%);
+}
+
+.heroTitle {
+  font-size: clamp(2.5rem, 5vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
+  margin-bottom: 24px;
+  color: #ffffff;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.heroSubtitle {
+  font-size: clamp(1.1rem, 2vw, 1.3rem);
+  color: #a0a0a0;
+  max-width: 700px;
+  margin: 0 auto 48px;
+  font-weight: 400;
+}
+
+.ctaBtn {
+  display: inline-block;
+  background-color: #00ff88;
+  color: #0d0d0d;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 18px 40px;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid transparent;
+  box-shadow: 0 4px 24px rgba(0, 255, 136, 0.2);
+}
+
+.ctaBtn:hover {
+  transform: translateY(-2px);
+  background-color: #00e67a;
+  box-shadow: 0 8px 32px rgba(0, 255, 136, 0.3);
+}
+
+/* Benefits Section */
+.benefits {
+  padding: 80px 0;
+  background-color: #141414;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.benefitsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+}
+
+@media (min-width: 768px) {
+  .benefitsGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.benefitCard {
+  background: #1a1a1a;
+  padding: 32px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.benefitCard:hover {
+  transform: translateY(-4px);
+  border-color: rgba(0, 255, 136, 0.2);
+}
+
+.benefitTitle {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+.benefitDesc {
+  font-size: 0.95rem;
+  color: #a0a0a0;
+}
+
+/* Plans Section */
+.plans {
+  padding: 100px 0;
+}
+
+.sectionHeader {
+  text-align: center;
+  margin-bottom: 64px;
+}
+
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+}
+
+.sectionSubtitle {
+  font-size: 1.1rem;
+  color: #a0a0a0;
+}
+
+.plansGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .plansGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.planCard {
+  background: #141414;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 16px;
+  padding: 48px 32px;
+  display: flex;
+  flex-direction: column;
+  transition: all 0.3s ease;
+}
+
+.planCard:hover {
+  border-color: rgba(0, 255, 136, 0.3);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.5);
+}
+
+.planName {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.planPrice {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 16px;
+  color: #ffffff;
+  display: flex;
+  align-items: baseline;
+  gap: 4px;
+}
+
+.planPeriod {
+  font-size: 1rem;
+  color: #a0a0a0;
+  font-weight: 400;
+}
+
+.planDesc {
+  font-size: 0.95rem;
+  color: #a0a0a0;
+  margin-bottom: 32px;
+}
+
+.planFeatures {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 40px 0;
+  flex-grow: 1;
+}
+
+.featureItem {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 16px;
+  padding-left: 28px;
+  position: relative;
+}
+
+.featureItem::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #00ff88;
+  font-weight: bold;
+}
+
+.planAction {
+  text-align: center;
+}
+
+.planBtn {
+  display: block;
+  width: 100%;
+  background: transparent;
+  color: #00ff88;
+  border: 1px solid #00ff88;
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-bottom: 12px;
+}
+
+.planBtn:hover {
+  background: rgba(0, 255, 136, 0.1);
+  transform: translateY(-2px);
+}
+
+.planFidelity {
+  font-size: 0.75rem;
+  color: #666;
+  line-height: 1.4;
+}
+
+.planFidelity a {
+  color: #888;
+  text-decoration: underline;
+}
+
+.planFidelity a:hover {
+  color: #00ff88;
+}
+
+/* FAQ Section */
+.faq {
+  padding: 80px 0;
+  background-color: #141414;
+}
+
+.faqContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.accordionItem {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.accordionHeader {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 24px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #ffffff;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: inherit;
+}
+
+.accordionHeader::after {
+  content: "+";
+  font-size: 1.5rem;
+  color: #00ff88;
+  transition: transform 0.3s ease;
+}
+
+.accordionContent {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out, padding 0.3s ease;
+}
+
+.accordionItem.active .accordionContent {
+  max-height: 300px;
+  padding-bottom: 24px;
+}
+
+.accordionItem.active .accordionHeader::after {
+  transform: rotate(45deg);
+}
+
+.accordionText {
+  font-size: 0.95rem;
+  color: #a0a0a0;
+}
+
+/* Footer */
+.footer {
+  padding: 64px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  text-align: center;
+}
+
+.footerLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 640px) {
+  .footerLinks {
+    flex-direction: row;
+    justify-content: center;
+    gap: 32px;
+  }
+}
+
+.footerLink {
+  color: #a0a0a0;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.footerLink:hover {
+  color: #00ff88;
+}
+
+.footerCopy {
+  font-size: 0.8rem;
+  color: #666;
+}

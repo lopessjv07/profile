@@ -98,8 +98,8 @@ const translations: Record<Lang, Translations> = {
     "footer.secondary_cta": "Ver Meus Projetos",
     "footer.copy": "Todos os direitos reservados.",
 
-    "services.hero.title": "Landing pages que transformam tráfego pago em cliente",
-    "services.hero.subtitle": "Você roda tráfego. Eu faço a página converter.",
+    "services.hero.title": "Arquitetura web que transforma tráfego pago em cliente",
+    "services.hero.subtitle": "Sou o Lopes, um desenvolvedor focado em construir aplicações web rápidas e escaláveis usando tecnologias modernas.",
     "services.hero.cta": "Se tua campanha já tá rodando, me chama — dá pra melhorar isso rápido.",
 
     "services.problems.title": "Problemas que estão matando suas campanhas:",
