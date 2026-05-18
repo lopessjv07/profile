@@ -153,7 +153,7 @@ const translations: Record<Lang, Translations> = {
 
     "services.why.title": "Por Que Ser Meu Parceiro?",
     "services.why.f1": "Foco na Execução",
-    "services.why.f1.desc": "Não apenas escrevo código; resolvo problemas de negócio e foco em ROI.",
+    "services.why.f1.desc": "Não apenas escrevo código, resolvo problemas de negócio e foco em ROI.",
     "services.why.f2": "Mentalidade de Agência",
     "services.why.f2.desc": "Entendo de gestão de clientes, margens e da importância dos prazos.",
     "services.why.f3": "Comunicação Proativa",
