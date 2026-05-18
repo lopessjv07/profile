@@ -11,7 +11,7 @@ export default function LPLensPage() {
     setActiveFaq(activeFaq === index ? null : index);
   };
 
-  const whatsappLink = "https://wa.me/5500000000000?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20a%20infraestrutura%20de%20elite%20para%20minhas%20p%C3%A1ginas.";
+  const whatsappLink = "https://wa.me/5547992008256?text=Ol%C3%A1%2C%20gostaria%20de%20contratar%20a%20infraestrutura%20de%20elite%20para%20minhas%20p%C3%A1ginas.";
 
   return (
     <div className={styles.container}>
