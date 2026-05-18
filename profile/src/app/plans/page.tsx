@@ -21,7 +21,7 @@ export default function LPLensPage() {
       <section className={styles.hero}>
         <div className={styles.wrapper}>
           <h1 className={styles.heroTitle}>
-            Pare de queimar o orçamento dos seus anúncios com <span className={styles.textHighlight}>páginas lentas em WordPress</span>
+            Pare de queimar o orçamento dos seus anúncios com <span className={styles.textHighlight}>páginas lentas.</span>
           </h1>
           <p className={styles.heroSubtitle}>
             Nossa solução: Código Puro em Next.js hospedado em infraestrutura de servidores VPS privados para máxima estabilidade e conversão.
