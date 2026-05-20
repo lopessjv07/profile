@@ -21,6 +21,8 @@ export default function LPLensPage() {
       {/* Hero Section */}
       <section className={styles.hero}>
         <div className={styles.wrapper}>
+          <br />
+          <br />
           <h1 className={styles.heroTitle}>
             Pare de queimar o orçamento dos seus anúncios com <span className={styles.textHighlight}>páginas lentas.</span>
           </h1>
@@ -82,7 +84,7 @@ export default function LPLensPage() {
                   Quero saber mais
                 </a>
                 <p className={styles.planFidelity}>
-                  <a href="/termos-de-adesao.pdf" target="_blank" rel="noopener noreferrer">Ver termos de adesão</a>
+                  <a href="/regrasAdes%C3%A3o%26termosDeServi%C3%A7o.pdf" target="_blank" rel="noopener noreferrer">Ver termos de adesão</a>
                 </p>
               </div>
             </article>
@@ -107,7 +109,7 @@ export default function LPLensPage() {
                   Quero saber mais
                 </a>
                 <p className={styles.planFidelity}>
-                  <a href="/termos-de-adesao.pdf" target="_blank" rel="noopener noreferrer">Ver termos de adesão</a>
+                  <a href="/regrasAdes%C3%A3o%26termosDeServi%C3%A7o.pdf" target="_blank" rel="noopener noreferrer">Ver termos de adesão</a>
                 </p>
               </div>
             </article>
