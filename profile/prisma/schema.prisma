@@ -24,7 +24,7 @@ model PaymentLink {
   @@map("payment_links")
 }
 
-// Cliente que preencheu o formulário de pagamento
+// Cliente que preencheu o formulário de pagamento.
 model Client {
   id            String    @id @default(cuid())
   name          String    @db.VarChar(255)
