@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Link from "next/link";
 import Header from "../../../components/Header/Header";
 import Footer from "../../../components/Footer.tsx/Footer";
 import styles from "./creationpay.module.css";
@@ -34,6 +35,20 @@ export default function CreationPayPage() {
 
   // Toast
   const [toast, setToast] = useState<string | null>(null);
+
+  // Logout handler
+  const handleLogout = async () => {
+    try {
+      const res = await fetch("/api/payments/auth", { method: "DELETE" });
+      if (res.ok) {
+        window.location.href = "/payments/login";
+      } else {
+        showToast("Erro ao encerrar sessão.");
+      }
+    } catch {
+      showToast("Erro de rede ao sair.");
+    }
+  };
 
   // Load existing links on mount
   useEffect(() => {
@@ -205,6 +220,14 @@ export default function CreationPayPage() {
             <p className={styles.pageSubtitle}>
               Defina o valor e gere um link único de pagamento para enviar ao seu cliente.
             </p>
+            <div className={styles.adminNav}>
+              <Link href="/payments/clients" className={styles.navLink}>
+                👥 Histórico de Clientes
+              </Link>
+              <button onClick={handleLogout} className={styles.logoutBtn}>
+                🚪 Sair do Painel
+              </button>
+            </div>
           </div>
 
           <div className={styles.creationGrid}>

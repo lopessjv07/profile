@@ -40,6 +40,16 @@ interface Stats {
 }
 
 export default function ClientsPage() {
+  const handleLogout = async () => {
+    try {
+      const res = await fetch("/api/payments/auth", { method: "DELETE" });
+      if (res.ok) {
+        window.location.href = "/payments/login";
+      }
+    } catch {
+      console.error("Erro ao encerrar sessão");
+    }
+  };
   const [clients, setClients] = useState<Client[]>([]);
   const [stats, setStats] = useState<Stats>({
     totalClients: 0,
@@ -186,6 +196,14 @@ export default function ClientsPage() {
             <p className={styles.pageSubtitle}>
               Visualize todos os clientes e pagamentos da sua plataforma em tempo real.
             </p>
+            <div className={styles.adminNav}>
+              <Link href="/payments/creationpay" className={styles.navLink}>
+                ＋ Criar Cobrança
+              </Link>
+              <button onClick={handleLogout} className={styles.logoutBtn}>
+                🚪 Sair do Painel
+              </button>
+            </div>
           </div>
 
           {/* Stats */}

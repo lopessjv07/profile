@@ -500,6 +500,57 @@
   100% { background-position: -200% 0; }
 }
 
+/* Navigation actions for admin panel */
+.adminNav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-top: 16px;
+  flex-wrap: wrap;
+}
+
+.navLink {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  color: #e0e0e0;
+  padding: 8px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navLink:hover {
+  background: rgba(0, 255, 136, 0.08);
+  border-color: rgba(0, 255, 136, 0.2);
+  color: #00ff88;
+}
+
+.logoutBtn {
+  background: rgba(255, 75, 75, 0.05);
+  border: 1px solid rgba(255, 75, 75, 0.15);
+  color: #ff4b4b;
+  padding: 8px 16px;
+  border-radius: 8px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.logoutBtn:hover {
+  background: rgba(255, 75, 75, 0.15);
+  border-color: rgba(255, 75, 75, 0.25);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .linkItem {
