@@ -583,6 +583,7 @@ export default function PaymentsPage() {
       <main className={styles.mainContent}>
         <div className={styles.wrapper}>
           <div className={styles.titleSection}>
+            <br /><br />
             <h1 className={styles.pageTitle}>
               Checkout <span className={styles.textHighlight}>Transparente</span>
             </h1>

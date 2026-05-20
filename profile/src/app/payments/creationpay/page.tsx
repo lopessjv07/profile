@@ -214,6 +214,7 @@ export default function CreationPayPage() {
         <div className={styles.wrapper}>
           {/* Page Title */}
           <div className={styles.titleSection}>
+            <br /><br /><br />
             <h1 className={styles.pageTitle}>
               Criar <span className={styles.textHighlight}>Cobrança</span>
             </h1>
@@ -222,10 +223,21 @@ export default function CreationPayPage() {
             </p>
             <div className={styles.adminNav}>
               <Link href="/payments/clients" className={styles.navLink}>
-                👥 Histórico de Clientes
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '6px' }}>
+                  <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M22 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
+                Histórico de Clientes
               </Link>
               <button onClick={handleLogout} className={styles.logoutBtn}>
-                🚪 Sair do Painel
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '6px' }}>
+                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                  <polyline points="16 17 21 12 16 7"/>
+                  <line x1="21" y1="12" x2="9" y2="12"/>
+                </svg>
+                Sair do Painel
               </button>
             </div>
           </div>
@@ -234,13 +246,22 @@ export default function CreationPayPage() {
             {/* Left Column - Form */}
             <div className={styles.card}>
               <h3 className={styles.cardTitle}>
-                <span className={styles.cardIcon}>💰</span>
+                <span className={styles.cardIcon}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <rect x="2" y="5" width="20" height="14" rx="2" ry="2"/>
+                    <line x1="2" y1="10" x2="22" y2="10"/>
+                  </svg>
+                </span>
                 Nova Cobrança
               </h3>
 
               {error && (
                 <div className={styles.errorMessage}>
-                  <span style={{ fontSize: "1.2rem" }}>⚠</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/>
+                    <line x1="12" y1="9" x2="12" y2="13"/>
+                    <line x1="12" y1="17" x2="12.01" y2="17"/>
+                  </svg>
                   <span>{error}</span>
                 </div>
               )}
@@ -279,7 +300,13 @@ export default function CreationPayPage() {
                       Gerando Link...
                     </>
                   ) : (
-                    "🔗 Gerar Link de Pagamento"
+                    <>
+                      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                        <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                      </svg>
+                      Gerar Link de Pagamento
+                    </>
                   )}
                 </button>
               </form>
@@ -288,7 +315,10 @@ export default function CreationPayPage() {
               {generatedLink && (
                 <div className={styles.linkSuccess}>
                   <div className={styles.linkSuccessTitle}>
-                    <span>✓</span> Link gerado — {formatBRL(generatedLink.amount)}
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '4px' }}>
+                      <polyline points="20 6 9 17 4 12"/>
+                    </svg>
+                    Link gerado — {formatBRL(generatedLink.amount)}
                   </div>
                   <div className={styles.linkDisplay}>
                     <span className={styles.linkUrl}>
@@ -308,7 +338,16 @@ export default function CreationPayPage() {
             {/* Right Column - Links History */}
             <div className={styles.card}>
               <h3 className={styles.cardTitle}>
-                <span className={styles.cardIcon}>📋</span>
+                <span className={styles.cardIcon}>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="8" y1="6" x2="21" y2="6"/>
+                    <line x1="8" y1="12" x2="21" y2="12"/>
+                    <line x1="8" y1="18" x2="21" y2="18"/>
+                    <line x1="3" y1="6" x2="3.01" y2="6"/>
+                    <line x1="3" y1="12" x2="3.01" y2="12"/>
+                    <line x1="3" y1="18" x2="3.01" y2="18"/>
+                  </svg>
+                </span>
                 Links Criados
               </h3>
 
@@ -321,7 +360,10 @@ export default function CreationPayPage() {
                   </>
                 ) : links.length === 0 ? (
                   <div className={styles.emptyState}>
-                    <div className={styles.emptyIcon}>🔗</div>
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.3, margin: '0 auto 16px', display: 'block' }}>
+                      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                    </svg>
                     <p className={styles.emptyText}>
                       Nenhum link criado ainda.<br />
                       Crie sua primeira cobrança ao lado.
@@ -353,14 +395,21 @@ export default function CreationPayPage() {
                           onClick={() => copyLink(link.url)}
                           title="Copiar link"
                         >
-                          📋
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                            <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                          </svg>
                         </button>
                         <button
                           className={styles.iconBtn}
                           onClick={() => window.open(link.url, "_blank")}
                           title="Abrir link"
                         >
-                          ↗
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/>
+                            <polyline points="15 3 21 3 21 9"/>
+                            <line x1="10" y1="14" x2="21" y2="3"/>
+                          </svg>
                         </button>
                         {link.status === "ACTIVE" && (
                           <button
@@ -368,7 +417,10 @@ export default function CreationPayPage() {
                             onClick={() => cancelLink(link.id)}
                             title="Cancelar link"
                           >
-                            ✕
+                            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                              <line x1="18" y1="6" x2="6" y2="18"/>
+                              <line x1="6" y1="6" x2="18" y2="18"/>
+                            </svg>
                           </button>
                         )}
                       </div>

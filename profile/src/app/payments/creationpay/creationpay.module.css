@@ -551,28 +551,208 @@
   border-color: rgba(255, 75, 75, 0.25);
 }
 
-/* Responsive */
+/* =========================================================================
+   RESPONSIVE - MOBILE
+   ========================================================================= */
+
 @media (max-width: 768px) {
-  .linkItem {
-    flex-direction: column;
-    align-items: flex-start;
+  /* Layout base */
+  .mainContent {
+    padding: 32px 0;
   }
 
-  .linkItemActions {
-    width: 100%;
-    justify-content: flex-end;
+  .wrapper {
+    padding: 0 16px;
+  }
+
+  /* Títulos */
+  .titleSection {
+    margin-bottom: 28px;
+  }
+
+  .pageTitle {
+    font-size: 1.5rem;
+    margin-bottom: 6px;
+  }
+
+  .pageSubtitle {
+    font-size: 0.88rem;
+  }
+
+  /* Admin nav */
+  .adminNav {
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .navLink,
+  .logoutBtn {
+    padding: 8px 12px;
+    font-size: 0.8rem;
+  }
+
+  /* Cards */
+  .card {
+    padding: 20px 16px;
+    border-radius: 12px;
+  }
+
+  .cardTitle {
+    font-size: 1.05rem;
+    margin-bottom: 16px;
+    padding-bottom: 10px;
+    gap: 8px;
+  }
+
+  .cardIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 0.95rem;
+  }
+
+  /* Formulário */
+  .formGroup {
+    gap: 6px;
+    margin-bottom: 14px;
+  }
+
+  .label {
+    font-size: 0.78rem;
+  }
+
+  .formControl {
+    padding: 12px 14px;
+    font-size: 0.9rem;
+  }
+
+  .textarea {
+    min-height: 80px;
+  }
+
+  /* Campo de valor */
+  .amountPrefix {
+    font-size: 1rem;
+    left: 14px;
+  }
+
+  .amountInput {
+    padding-left: 44px;
+    font-size: 1.3rem;
+    height: 54px;
+  }
+
+  /* Botão submit */
+  .submitBtn {
+    padding: 14px;
+    font-size: 0.95rem;
+    border-radius: 10px;
+  }
+
+  /* Link gerado - sucesso */
+  .linkSuccess {
+    padding: 16px;
+    margin-top: 16px;
+    border-radius: 10px;
+  }
+
+  .linkSuccessTitle {
+    font-size: 0.85rem;
+    margin-bottom: 10px;
   }
 
   .linkDisplay {
     flex-direction: column;
+    gap: 10px;
+    padding: 10px 12px;
   }
 
   .linkUrl {
     width: 100%;
+    font-size: 0.78rem;
+    white-space: normal;
+    word-break: break-all;
+    text-align: center;
   }
 
   .copyBtn {
     width: 100%;
     text-align: center;
+    padding: 10px;
+  }
+
+  /* Lista de links */
+  .linkItem {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 14px 16px;
+    gap: 10px;
+    border-radius: 10px;
+  }
+
+  .linkItemDesc {
+    font-size: 0.9rem;
+  }
+
+  .linkItemMeta {
+    font-size: 0.75rem;
+    gap: 8px;
+  }
+
+  .linkItemAmount {
+    font-size: 1rem;
+  }
+
+  .linkItemActions {
+    width: 100%;
+    justify-content: flex-end;
+    gap: 6px;
+  }
+
+  .iconBtn {
+    width: 34px;
+    height: 34px;
+  }
+
+  /* Empty state */
+  .emptyState {
+    padding: 32px 16px;
+  }
+
+  /* Erro */
+  .errorMessage {
+    padding: 12px;
+    font-size: 0.85rem;
+    gap: 8px;
+    margin-bottom: 16px;
+  }
+
+  /* Toast */
+  .toast {
+    left: 16px;
+    right: 16px;
+    bottom: 16px;
+    font-size: 0.85rem;
+    padding: 12px 16px;
+  }
+}
+
+/* Ultra-small (iPhone SE, Galaxy Fold) */
+@media (max-width: 380px) {
+  .wrapper {
+    padding: 0 12px;
+  }
+
+  .card {
+    padding: 16px 12px;
+  }
+
+  .pageTitle {
+    font-size: 1.35rem;
+  }
+
+  .amountInput {
+    font-size: 1.15rem;
+    height: 48px;
   }
 }

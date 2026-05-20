@@ -161,10 +161,37 @@ export default function ClientsPage() {
 
   const getMethodLabel = (method: string) => {
     switch (method) {
-      case "PIX": return "⚡ Pix";
-      case "CREDIT_CARD": return "💳 Cartão";
-      case "BOLETO": return "📄 Boleto";
-      default: return method;
+      case "PIX":
+        return (
+          <span style={{ display: "inline-flex", alignItems: "center" }}>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: "6px" }}>
+              <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/>
+            </svg>
+            Pix
+          </span>
+        );
+      case "CREDIT_CARD":
+        return (
+          <span style={{ display: "inline-flex", alignItems: "center" }}>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: "6px" }}>
+              <rect x="1" y="4" width="22" height="16" rx="2" ry="2"/>
+              <line x1="1" y1="10" x2="23" y2="10"/>
+            </svg>
+            Cartão
+          </span>
+        );
+      case "BOLETO":
+        return (
+          <span style={{ display: "inline-flex", alignItems: "center" }}>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: "6px" }}>
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+            </svg>
+            Boleto
+          </span>
+        );
+      default:
+        return method;
     }
   };
 
@@ -198,10 +225,19 @@ export default function ClientsPage() {
             </p>
             <div className={styles.adminNav}>
               <Link href="/payments/creationpay" className={styles.navLink}>
-                ＋ Criar Cobrança
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '6px' }}>
+                  <line x1="12" y1="5" x2="12" y2="19"/>
+                  <line x1="5" y1="12" x2="19" y2="12"/>
+                </svg>
+                Criar Cobrança
               </Link>
               <button onClick={handleLogout} className={styles.logoutBtn}>
-                🚪 Sair do Painel
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ marginRight: '6px' }}>
+                  <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/>
+                  <polyline points="16 17 21 12 16 7"/>
+                  <line x1="21" y1="12" x2="9" y2="12"/>
+                </svg>
+                Sair do Painel
               </button>
             </div>
           </div>
@@ -237,7 +273,12 @@ export default function ClientsPage() {
           {/* Toolbar */}
           <div className={styles.toolbar}>
             <div className={styles.searchContainer}>
-              <span className={styles.searchIcon}>🔍</span>
+              <span className={styles.searchIcon}>
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.5 }}>
+                  <circle cx="11" cy="11" r="8"/>
+                  <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                </svg>
+              </span>
               <input
                 type="text"
                 className={styles.searchInput}
@@ -271,7 +312,11 @@ export default function ClientsPage() {
             </select>
 
             <Link href="/payments/creationpay" className={styles.navBtn}>
-              ＋ Nova Cobrança
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"/>
+                <line x1="5" y1="12" x2="19" y2="12"/>
+              </svg>
+              Nova Cobrança
             </Link>
           </div>
 
@@ -285,7 +330,12 @@ export default function ClientsPage() {
               </div>
             ) : clients.length === 0 ? (
               <div className={styles.emptyState}>
-                <div className={styles.emptyIcon}>👥</div>
+                <svg width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ opacity: 0.3, margin: '0 auto 16px', display: 'block' }}>
+                  <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                  <circle cx="9" cy="7" r="4"/>
+                  <path d="M23 21v-2a4 4 0 0 0-3-3.87"/>
+                  <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+                </svg>
                 <h3 className={styles.emptyTitle}>Nenhum cliente encontrado</h3>
                 <p className={styles.emptyText}>
                   {search || statusFilter || methodFilter
@@ -318,8 +368,17 @@ export default function ClientsPage() {
                             className={styles.expandBtn}
                             onClick={() => toggleExpand(client.id)}
                             title="Ver pagamentos"
+                            style={{ display: 'flex', alignItems: 'center', justifyContent: 'center' }}
                           >
-                            {expandedClient === client.id ? "▼" : "▶"}
+                            {expandedClient === client.id ? (
+                              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                <polyline points="6 9 12 15 18 9"/>
+                              </svg>
+                            ) : (
+                              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                <polyline points="9 18 15 12 9 6"/>
+                              </svg>
+                            )}
                           </button>
                         </td>
                         <td>

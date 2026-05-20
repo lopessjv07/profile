@@ -30,3 +30,10 @@
   top: var(--glow-y, -1000px);
   transition: left 0.0s ease-out, top 0.0s ease-out;
 }
+
+/* Desabilitar no mobile - não tem cursor de mouse */
+@media (max-width: 768px) {
+  .mouse-glow-wrapper {
+    display: none;
+  }
+}

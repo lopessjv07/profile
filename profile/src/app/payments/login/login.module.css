@@ -84,6 +84,8 @@
   transform: translateY(-50%);
   color: #555555;
   pointer-events: none;
+  display: flex;
+  align-items: center;
 }
 
 .input {
@@ -148,6 +150,13 @@
   padding: 10px 14px;
   border-radius: 8px;
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.errorIcon {
+  flex-shrink: 0;
 }
 
 /* Back Link */
