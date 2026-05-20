@@ -1,0 +1,65 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+// Link de pagamento criado pelo admin
+model PaymentLink {
+  id          String    @id @default(cuid())
+  slug        String    @unique // slug único para o link público
+  amount      Float     // valor da cobrança
+  description String    @db.Text // descrição do serviço/cobrança
+  status      String    @default("ACTIVE") @db.VarChar(20) // ACTIVE, PAID, EXPIRED, CANCELLED
+  createdAt   DateTime  @default(now())
+  updatedAt   DateTime  @updatedAt
+  payments    Payment[]
+
+  @@map("payment_links")
+}
+
+// Cliente que preencheu o formulário de pagamento
+model Client {
+  id            String    @id @default(cuid())
+  name          String    @db.VarChar(255)
+  email         String    @db.VarChar(255)
+  cpfCnpj       String    @db.VarChar(18)
+  phone         String    @db.VarChar(20)
+  cep           String?   @db.VarChar(10)
+  addressNumber String?   @db.VarChar(20)
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  payments      Payment[]
+
+  @@index([email])
+  @@index([cpfCnpj])
+  @@map("clients")
+}
+
+// Registro de pagamento processado
+model Payment {
+  id              String      @id @default(cuid())
+  clientId        String
+  linkId          String
+  method          String      @db.VarChar(20) // PIX, CREDIT_CARD, BOLETO
+  status          String      @default("PENDING") @db.VarChar(20) // PENDING, CONFIRMED, RECEIVED, FAILED
+  amount          Float
+  asaasPaymentId  String?     @db.VarChar(255) // ID do pagamento no Asaas
+  asaasInvoiceUrl String?     @db.Text // URL da fatura no Asaas
+  createdAt       DateTime    @default(now())
+  updatedAt       DateTime    @updatedAt
+
+  client          Client      @relation(fields: [clientId], references: [id])
+  paymentLink     PaymentLink @relation(fields: [linkId], references: [id])
+
+  @@index([clientId])
+  @@index([linkId])
+  @@index([status])
+  @@map("payments")
+}
