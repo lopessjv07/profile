@@ -130,7 +130,7 @@ export default function LPLensPage() {
                 O que acontece se eu precisar de mais páginas ou novas rotas (/outra-coisa) depois?
               </button>
               <div className={styles.accordionContent}>
-                <p className={styles.accordionText}>Qualquer nova página criada ou nova rota é tratada sob uma taxa avulsa a partir de R$ 100 por nova página criada. Assim garantimos que o plano mensal se mantenha justo para o escopo inicial contratado.</p>
+                <p className={styles.accordionText}>Qualquer nova página criada ou nova rota é tratada sob uma taxa avulsa a partir de R$ 150 por nova página criada. Assim garantimos que o plano mensal se mantenha justo para o escopo inicial contratado.</p>
               </div>
             </div>
 
