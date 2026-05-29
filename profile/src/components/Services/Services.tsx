@@ -4,7 +4,7 @@ import { faCheck, faBolt, faCode, faDesktop, faArrowRight, faShieldHalved, faClo
 import { useLanguage } from "../../i18n/i18n";
 
 function Services() {
-  const { t } = useLanguage();
+  const { t, lang } = useLanguage();
 
   return (
     <main className="services-page">
@@ -78,7 +78,7 @@ function Services() {
           </h2>
           <div className="recent-grid">
             {/* Project 1 */}
-            <a href="https://lavacarjlle.vercel.app/en" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+            <a href={lang === "pt" ? "https://lavacarjlle.vercel.app/pt" : "https://lavacarjlle.vercel.app/pt"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="recent-card">
               <div className="recent-card__image-placeholder">
                 <img src="/carwash-preview.png" alt="Car Wash Website Preview" />
@@ -94,7 +94,7 @@ function Services() {
             </a>
 
             {/* Project 2 – Auto Repair */}
-            <a href="https://lopesautorepair.com/en" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+            <a href={lang === "pt" ? "https://lopesautorepair.com/pt" : "https://lopesautorepair.com/en"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="recent-card">
               <div className="recent-card__image-placeholder">
                 <img src="/autorepair-preview.png" alt="Auto Repair Website Preview" />
