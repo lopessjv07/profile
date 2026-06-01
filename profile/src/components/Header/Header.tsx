@@ -17,7 +17,7 @@ function Header() {
     <header className="header">
       <div className="header__inner">
         <a href="/" className="header__logo">
-          <img src="/logo.png" alt="LopesDev" className="header__logo-img" />
+          <img src="/logo.webp" alt="LopesDev" className="header__logo-img" />
         </a>
 
         <nav className="header__nav">

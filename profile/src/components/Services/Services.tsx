@@ -81,7 +81,7 @@ function Services() {
             <a href="https://anacassiafisio.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="recent-card">
               <div className="recent-card__image-placeholder">
-                <img src="/anacassiafisio.png" alt="Neurofunctional Physiotherapy Website Preview" />
+                <img src="/anacassiafisio.webp" alt="Neurofunctional Physiotherapy Website Preview" />
               </div>
               <div className="recent-card__content">
                 <h3 className="recent-card__title">{t("services.recent.neurofisio")}</h3>
@@ -97,7 +97,7 @@ function Services() {
             <a href={lang === "pt" ? "https://lopesautorepair.com/pt" : "https://lopesautorepair.com/en"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="recent-card">
               <div className="recent-card__image-placeholder">
-                <img src="/oficina.png" alt="Auto Repair Website Preview" />
+                <img src="/oficina.webp" alt="Auto Repair Website Preview" />
               </div>
               <div className="recent-card__content">
                 <h3 className="recent-card__title">{t("services.recent.autorepair")}</h3>
@@ -113,7 +113,7 @@ function Services() {
             <a href="https://ld.divinaluz.org/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="recent-card">
               <div className="recent-card__image-placeholder">
-                <img src="/divinaluz-preview.png" alt="Divina Luz Preview" />
+                <img src="/divinaluz-preview.webp" alt="Divina Luz Preview" />
               </div>
               <div className="recent-card__content">
                 <h3 className="recent-card__title">{t("services.recent.divinaluz")}</h3>
