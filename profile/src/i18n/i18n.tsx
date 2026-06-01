@@ -139,6 +139,8 @@ const translations: Record<Lang, Translations> = {
     "services.process.p3.desc": "Testes rigorosos garantem zero surpresas no lançamento. Entrega no prazo, sempre.",
 
     "services.recent.title": "Projetos Recentes",
+    "services.recent.neurofisio": "Site de Fisioterapia Neurofuncional",
+    "services.recent.neurofisio.desc": "Landing page de alta performance — focada em SEO local e captação de pacientes para clínica especializada.",
     "services.recent.carwash": "Site de Lava Rápido",
     "services.recent.carwash.desc": "Landing page pra lavação — focada em gerar leads diretos via WhatsApp a partir de tráfego pago",
     "services.recent.hairsalon": "Site de Salão de Beleza",
@@ -394,6 +396,8 @@ const translations: Record<Lang, Translations> = {
     "services.process.p3.desc": "Rigorous testing ensures zero surprises at launch. Delivery on time, every time.",
 
     "services.recent.title": "Recent Projects",
+    "services.recent.neurofisio": "Neurofunctional Physiotherapy Website",
+    "services.recent.neurofisio.desc": "A high-performance landing page focused on local SEO and patient acquisition for a specialized clinic.",
     "services.recent.carwash": "Car Wash Website",
     "services.recent.carwash.desc": "A fast, conversion-driven website for a local premium car wash service.",
     "services.recent.hairsalon": "Hair Salon Website",

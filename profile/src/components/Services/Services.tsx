@@ -78,14 +78,14 @@ function Services() {
           </h2>
           <div className="recent-grid">
             {/* Project 1 */}
-            <a href={lang === "pt" ? "https://lavacarjlle.vercel.app/pt" : "https://lavacarjlle.vercel.app/pt"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
+            <a href="https://anacassiafisio.com/" target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="recent-card">
               <div className="recent-card__image-placeholder">
-                <img src="/carwash-preview.png" alt="Car Wash Website Preview" />
+                <img src="/anacassiafisio.png" alt="Neurofunctional Physiotherapy Website Preview" />
               </div>
               <div className="recent-card__content">
-                <h3 className="recent-card__title">{t("services.recent.carwash")}</h3>
-                <p className="recent-card__desc">{t("services.recent.carwash.desc")}</p>
+                <h3 className="recent-card__title">{t("services.recent.neurofisio")}</h3>
+                <p className="recent-card__desc">{t("services.recent.neurofisio.desc")}</p>
                 <span className="recent-card__link">
                   {t("services.recent.cta")} <FontAwesomeIcon icon={faArrowRight} style={{marginLeft: "6px"}}/>
                 </span>
@@ -97,7 +97,7 @@ function Services() {
             <a href={lang === "pt" ? "https://lopesautorepair.com/pt" : "https://lopesautorepair.com/en"} target="_blank" rel="noopener noreferrer" style={{ textDecoration: "none", color: "inherit" }}>
             <div className="recent-card">
               <div className="recent-card__image-placeholder">
-                <img src="/autorepair-preview.png" alt="Auto Repair Website Preview" />
+                <img src="/oficina.png" alt="Auto Repair Website Preview" />
               </div>
               <div className="recent-card__content">
                 <h3 className="recent-card__title">{t("services.recent.autorepair")}</h3>
